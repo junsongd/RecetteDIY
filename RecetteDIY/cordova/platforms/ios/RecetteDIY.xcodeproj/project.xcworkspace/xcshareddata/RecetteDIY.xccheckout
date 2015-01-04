@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>204501E2-DB49-411B-B9EA-04BFA0088B83</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RecetteDIY</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>749FA7D246C18F5A3F489D57312C1BBE45DE9FB5</key>
+		<string>https://github.com/junsongd/RecetteDIY.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RecetteDIY/cordova/platforms/ios/RecetteDIY.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>749FA7D246C18F5A3F489D57312C1BBE45DE9FB5</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/junsongd/RecetteDIY.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>749FA7D246C18F5A3F489D57312C1BBE45DE9FB5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>749FA7D246C18F5A3F489D57312C1BBE45DE9FB5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RecetteDIY</string>
+		</dict>
+	</array>
+</dict>
+</plist>

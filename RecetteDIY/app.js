@@ -19,18 +19,23 @@ Ext.application({
 
     views: [
         'MainView',
+        'AccueilView',
         'RecetteView',
+        'RechercheView',
         'IngredientView',
         'DisscutionView',
         'PropositionView', 
         'ContactView',
-        'TDLTabPanel'
+        'TDLTabPanel',
+        'PlatPopView'
            
     ], 
    controllers:
    [
      'MainController',
+     'AccueilController',
      'RecetteController',
+     'RechercheController',
      'IngredientController',
      'ContactController',
      'PropositionController',
@@ -38,11 +43,11 @@ Ext.application({
     ],
    stores: [  
 
-
+     'PlatPopStore'
    ],
    models:[ 
-
-
+     
+     'PlatPopModel'
    ], 
 
     icon: {

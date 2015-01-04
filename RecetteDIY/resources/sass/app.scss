@@ -12,12 +12,18 @@
 
 //parameters
 
-$main-background: #f13e92;
-$label-text-color : #FFFFFF;
+$main-background: #FFFFFF;
+$label-text-color : #323232;
 $page-bg-color: #FFFFFF;
 $select-field-text-color: #999;
 $picker-sheet-radius :0;
 $bar-bg-color :  #EDEDED;
+$icon-bg-color :#f13e92;
+$entre-bg-color :#f44e87;
+$plat-bg-color :#75d628;
+$dessert-bg-color :#00afe9;
+$autre-bg-color :#f775e8;
+$menu-button-label-color :#FFFFFF;
 
 $light-grey-background: #EDEDED;
 $border-color: #BBBBBB;
@@ -40,6 +46,9 @@ $disscusion-text-color : #c9c9c9;
 @include icon-font('Helvetica Neue', inline-font-files('Helvetica-Neue/HelveticaNeue.otf', otf));
 @include icon("icon-arrow-right"  , "c" , 'CustomIcons');
 
+@include icon("menu"  , "\e009");
+
+
 //toolbar  top
 .x-toolbar 
 {
@@ -55,14 +64,20 @@ $disscusion-text-color : #c9c9c9;
       font-size:1.3em;
     }
   }
+
 }
-.x-toolbar.x-docked-top {
- border-bottom: 1px solid transparent;
-}
+
 .x-toolbar-dark 
 {
  background-image : none;
 }
+
+.apptopbar
+{
+   border-bottom: solid 1px #BBBBBB;
+
+}
+
 
 
 //toolbar  bottom
@@ -102,6 +117,129 @@ $disscusion-text-color : #c9c9c9;
 {
   background-color:$page-bg-color; 
 }
+
+#accueilview
+
+{ 
+    #pub-image-list  img 
+    {
+      width: 100%;      
+    }
+   .carousel_container
+   {
+      height: 25%;
+
+   }
+   .category-menu-button
+   {
+
+      width: 15%;
+      margin: 3%;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+       font-size: 60%;
+      border: none;
+      .x-button-label{
+        color: $menu-button-label-color;
+      }
+   }
+     .entre 
+      {
+         background: $entre-bg-color;
+       }
+      .dessert  
+      {
+
+         background: $plat-bg-color;
+       }
+      .plat 
+      {
+           background: $dessert-bg-color;
+ 
+      }
+      .autre
+      {
+
+        background: $autre-bg-color;
+       }
+   .category-menu-panel
+   { 
+       margin-top: 9px;
+      border-bottom: solid 1px #BBB; 
+   }
+   .x-carousel-item
+   { 
+      .x-innerhtml
+      {
+        padding: 0px;
+      }
+   }
+  .x-carousel-indicator-active
+   {
+       background-color :$icon-bg-color ;
+       
+   }  
+   .x-carousel-indicator span
+   {
+     width: 5px;
+     height: 5px
+
+   }
+     .platpop-item
+     {
+        width: 49%;
+        height: 50%;
+        float: left;
+        padding: 2px;
+        .platpopimage img
+        { 
+          width: 100%;
+        }
+    }
+  #platpopbar
+  {
+     border: none;
+     .x-innerhtml
+     {
+       font-size: 16px;
+
+     }
+
+  }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -350,67 +488,67 @@ $disscusion-text-color : #c9c9c9;
     .x-button-label {
       line-height: 2em;
       color: $menu-bottom-text-color;
+      font-size: 9px;
     }
   }
 
-  .actualite-icon {
-    background-image:url("images/Ico_Actu_Off.png");
+.accueil-icon {
+    background-image:url("images/accueil_off.png");
     background-size: cover; 
     background-position-x: -6px;
   }
 
-  .discussion-icon {
-    background-image:url("images/Ico_Discussions_Off.png");
+  .recherche-icon {
+    background-image:url("images/recherche_off.png");
     background-size: cover; 
     background-position-x: -6px;
   }
 
-  .decision-icon {
-    background-image:url("images/Ico_Decision_Off.png");
+  .communaute-icon {
+    background-image:url("images/communaute_off.png");
     background-size: cover; 
     background-position-x: -6px;
   }
 
-  .calculator-icon {
-    background-image:url("images/Ico_Calculateur_Off.png");
+  .suggestions-icon {
+    background-image:url("images/suggestions_off.png");
     background-size: cover; 
     background-position-x: -6px;
   }
 
-  .contact-icon {
-    background-image:url("images/Ico_Contact_Off.png");
+  .plus-icon {
+    background-image:url("images/plus_off.png");
     background-size: cover; 
     background-position-x: -6px;
   }
-
   .x-tab-active 
   {
     background:none;
     .x-button-label {
-      color: white;
+      color: $icon-bg-color;
     }
 
-    .actualite-icon {
-      background-image:url("images/Ico_Actu_On.png"); 
+    .accueil-icon {
+      background-image:url("images/accueil_on.png"); 
       
     }
 
-    .discussion-icon {
-      background-image:url("images/Ico_Discussions_On.png"); 
+    .recherche-icon {
+      background-image:url("images/recherche_on.png"); 
     }
 
-    .decision-icon {
-      background-image:url("images/Ico_Decision_On.png");
+    .communaute-icon {
+      background-image:url("images/communaute_on.png");
   
     }
 
-    .calculator-icon {
-      background-image:url("images/Ico_Calculateur_On.png");
+    .suggestions-icon {
+      background-image:url("images/suggestions_on.png");
      
     }
 
-    .contact-icon {
-      background-image:url("images/Ico_Contact_On.png");
+    .plus-icon {
+      background-image:url("images/plus_on.png");
     
     }
   }

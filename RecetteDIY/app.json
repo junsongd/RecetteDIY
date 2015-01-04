@@ -1,4 +1,20 @@
 {
+    "builds": {
+        "web": {"default": true},
+        "native": {
+            "packager": "cordova",
+            "cordova" : {
+                "config": {
+                    // Uncomment the line below and add the platforms you wish to build for
+                    "platforms": "ios", 
+                    "id": "com.brothers.recettediy",
+                    "name": "RecetteDIY"
+                }
+            }
+        }
+    },
+
+                
     /**
      * The application's namespace, used by Sencha Command to generate classes
      */
@@ -74,7 +90,7 @@
         {
             "path": "resources/css/app.css",
             "update": "delta"
-        }
+        } 
     ],
 
     /**
@@ -116,7 +132,7 @@
         "app/controller/",
         "app/view/",
         "app/model/",
-        "app/store/",
+        "app/store/"
     ],
 
     /**
