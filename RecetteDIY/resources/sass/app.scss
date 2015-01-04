@@ -107,18 +107,32 @@ $disscusion-text-color : #c9c9c9;
   background-color:$bar-bg-color;
   .x-tab{
     width: 50%;
+
   } 
+
+  
 }
-.x-layout-card-item
-{ 
-  background-color:$page-bg-color; 
-}
+.x-tabbar.x-docked-top .x-tab
+  { 
+    background-color:$page-bg-color; 
+     border: solid 1px $icon-bg-color;
+     .x-button-label
+     {
+      color: $icon-bg-color;
+     }
+
+  }
+ .x-tabbar.x-docked-top .x-tab.x-tab-active
+    {
+      background-color:$icon-bg-color ;
+
+    }
 .appcontent
 {
   background-color:$page-bg-color; 
 }
 
-#accueilview
+#accueilviewcontainer
 
 { 
     #pub-image-list  img 
@@ -212,121 +226,50 @@ $disscusion-text-color : #c9c9c9;
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// disscusion page
-
-.criteresbar
+#recette_list
 {
-  background-color: $bar-bg-color;
-  .criteresbarlabel
-  { 
-    width: 70%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 44px;
-    margin: 0 auto;
-    color :$main-background;
-  }
+
+    .x-list-item
+    {
+        height: 200px;
+
+       
+    }
+     .x-innerhtml
+       { 
+         padding: 0px;
+       }
+      .recette-list-item
+      {
+
+         
+             .recette-list-item-image img
+             {
+                 width: 100%;
+                 height: 200px;
+
+             }
+            .recette-list-item-title
+            {
+                 margin-top: -40px;
+                background: rgba(5, 4, 4, 0.5);
+                z-index: 20;
+                position: absolute;
+                width: 100%;
+                height: 40px;
+                color: #FFFFFF;
+                padding: 3px;
+                font-size: 13px;
+            } 
+      }
+  
 }
 
 
 
-//actualite page
 
-#actualiteBackButton 
-{ 
-
-  height: 27px;
  
-} 
-#actualiteBackButton::after, #messageBackButton::after{
-  position: absolute;
-  right: 1em;
-  font-family: "CustomIcons";
-  content: "2";
-  color: #FFF;
-}
-.actu-list-item
-{ 
-  height: 65px; 
-  .actu-list-item-img{  
-    float: left;
-    height: 100%;
-    width: 60px;
-    padding: 5px;
-  }
-  .actu-list-item-description{
-    float: left;
-    height: 100%;
-    font-size: 11px;
-    width: 75%;
-    padding: 5px;
-
-  }
-
-}
-.x-list-item
-{ 
-  .x-innerhtml{
-    padding: 0px !important;
-  }
-
-}
-.actu-list-item:after{
-  position: absolute;
-  top: 22px;
-  bottom: 0;
-  right: 1em;
-  font-family: "CustomIcons";
-  content: "7";
-  color: $main-background;
-}
-
-.maturite-container-line
-{
-  margin-top: 30px; 
-  .x-button
-  {
-   background-color:$main-background;
-   border-color: $main-background;
-
- }
- .x-button-label
- {
-  color: $label-text-color; 
-}
-}
+ 
 
 #calculatorview , #decisionview{
   .x-tabbar.x-docked-top .x-tab.x-tab-active
@@ -351,60 +294,7 @@ $disscusion-text-color : #c9c9c9;
   width: 100% !important; 
 }
 
-#densite-criteresbar .buttoninfo ,#maturite-criteresbar .buttoninfo
-{
-  border: 1px solid $main-background;
-  border-radius: 100%;
-  width: 28px;
-  height: 28px;
-  line-height: 22px;
-  background: transparent;
-  margin-top: 6px;
-    .x-button-label
-    {
-      color:$main-background;
-    }
-}
-
-.dentite-calcul-button
-{
-    background-color: #3bae21;
-    border-color: #3bae21;
-     .x-button-label
-    {
-      color:#FFFFFF;
-    }
-
-}
-
-#calculatorview
-{
-     .maturite-navigation-bar ,.densite-navigation-bar{
-    background-color: $light-grey-background;
-    border-bottom: 1px solid $border-color; 
-    .x-title {
-      color: $main-background;
-    }  
-    .x-innerhtml
-    {
-      font-size :16px;
-    }
-  }
-    .x-navigationview
-    { 
-       .x-button-back .x-button-label
-       {
-          color: $main-background; 
-       }
-    }
-  .x-button.x-button-back:before
-  {
-     color: $main-background; 
-      margin-left: 5px;
-  } 
-   
-       
-} 
+ 
 
 #densite_navigation_view
 {
@@ -432,49 +322,8 @@ $disscusion-text-color : #c9c9c9;
 
 } 
 
-#disease_navigation_view 
-{  
-      .x-toolbar
-      {
-        background-color: $light-grey-background;
-
-      }
-      .x-innerhtml
-      {
-         color:$main-background;
-         font-size: 16px;
-      }
-}
+  
  
-
-#decisionview {
-        letter-spacing: 1px;
-        .variety-navigation-bar {
-          background-color: $light-grey-background;
-          border-bottom: 1px solid $border-color; 
-          .x-title {
-            color: $main-background;
-          }  
-          .x-innerhtml
-          {
-            font-size :16px;
-          }
-          
-        }
-        .x-button.x-button-back:before
-          {
-            color: $main-background; 
-            margin-left: 5px;
-          }
-      .x-navigationview
-      { 
-         .x-button-back .x-button-label
-         {
-            color: $main-background; 
-         }
-      }
-}
-
 /* footer */
 .footer-tabbar {
   .x-tab {

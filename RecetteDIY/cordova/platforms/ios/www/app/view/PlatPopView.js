@@ -20,7 +20,19 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore'
+                store: 'platpopstore',
+                listeners: {
+                             itemtap: function ( element, index, target, record, e, eOpts ) {
+                                
+                                         Ext.getCmp('accueil_navigation_view').push(
+                                         {
+                                            xtype: 'recetteview',
+                                            title: record.data.title
+                                          }
+                                        );  
+                                   
+                           },
+                },
             },
             {
                 xtype: 'toolbar',

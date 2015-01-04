@@ -3,17 +3,12 @@ Ext.define("RecetteDIY.view.RecetteView", {
    xtype: 'recetteview',
    config: {
       id: 'recetteview',  
-      layout:'hbox', 
+      layout:'fit',  
       items: [
          {
-             
-            
-         },
-         //Contenue a droite
-         {
-            
-           
-         },
+             xtype: 'recetteviewcontainer',  
+         } 
+          
       ],
    },
    initialize: function() {

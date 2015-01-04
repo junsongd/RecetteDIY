@@ -21,13 +21,23 @@ Ext.application({
         'MainView',
         'AccueilView',
         'RecetteView',
+        'RecetteViewContainer',
+        'RecetteList',
         'RechercheView',
         'IngredientView',
-        'DisscutionView',
+        'CommunicationView',
         'PropositionView', 
-        'ContactView',
+        'PlusView',
         'TDLTabPanel',
-        'PlatPopView'
+        'PlatPopView', 
+        'RecetteDetailView',
+        'AccueilViewContainer',
+        'CommunicationDetailView',
+        'RechercheViewContainer',
+        'PubDetailView',
+        'CommunicationViewContainer',
+        'CommunicationList' 
+        
            
     ], 
    controllers:
@@ -74,6 +84,13 @@ Ext.application({
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('RecetteDIY.view.MainView'));
+         // ios 7   
+                if (window.device &&
+                    window.device.platform.toLowerCase() == "ios" &&
+                    parseFloat(window.device.version) >= 7.0) {
+                     Ext.select(".x-navigation-bar").applyStyles("height:64px;padding-top:10px"); 
+                 }  
+         
     },
 
     onUpdated: function() {

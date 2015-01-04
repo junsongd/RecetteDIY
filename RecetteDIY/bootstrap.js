@@ -666,15 +666,23 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.model.PlatPopModel": [],
   "RecetteDIY.store.PlatPopStore": [],
   "RecetteDIY.view.AccueilView": [],
-  "RecetteDIY.view.ContactView": [],
-  "RecetteDIY.view.DisscutionView": [],
+  "RecetteDIY.view.AccueilViewContainer": [],
+  "RecetteDIY.view.CommunicationDetailView": [],
+  "RecetteDIY.view.CommunicationList": [],
+  "RecetteDIY.view.CommunicationView": [],
+  "RecetteDIY.view.CommunicationViewContainer": [],
   "RecetteDIY.view.IngredientView": [],
   "RecetteDIY.view.MainView": [],
-  "RecetteDIY.view.MaladieView": [],
   "RecetteDIY.view.PlatPopView": [],
+  "RecetteDIY.view.PlusView": [],
   "RecetteDIY.view.PropositionView": [],
+  "RecetteDIY.view.PubDetailView": [],
+  "RecetteDIY.view.RecetteDetailView": [],
+  "RecetteDIY.view.RecetteList": [],
   "RecetteDIY.view.RecetteView": [],
+  "RecetteDIY.view.RecetteViewContainer": [],
   "RecetteDIY.view.RechercheView": [],
+  "RecetteDIY.view.RechercheViewContainer": [],
   "RecetteDIY.view.TDLTabPanel": []
 });
 
@@ -1412,11 +1420,20 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.AccueilView": [
     "widget.accueilview"
   ],
-  "RecetteDIY.view.ContactView": [
-    "widget.contactview"
+  "RecetteDIY.view.AccueilViewContainer": [
+    "widget.accueilviewcontainer"
   ],
-  "RecetteDIY.view.DisscutionView": [
-    "widget.disscutionview"
+  "RecetteDIY.view.CommunicationDetailView": [
+    "widget.communicationdetailview"
+  ],
+  "RecetteDIY.view.CommunicationList": [
+    "widget.communicationlist"
+  ],
+  "RecetteDIY.view.CommunicationView": [
+    "widget.communicationview"
+  ],
+  "RecetteDIY.view.CommunicationViewContainer": [
+    "widget.communicationviewcontainer"
   ],
   "RecetteDIY.view.IngredientView": [
     "widget.ingredientview"
@@ -1424,20 +1441,35 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.MainView": [
     "widget.main"
   ],
-  "RecetteDIY.view.MaladieView": [
-    "widget.maladieview"
-  ],
   "RecetteDIY.view.PlatPopView": [
     "widget.platpopview"
+  ],
+  "RecetteDIY.view.PlusView": [
+    "widget.plusview"
   ],
   "RecetteDIY.view.PropositionView": [
     "widget.propositionview"
   ],
+  "RecetteDIY.view.PubDetailView": [
+    "widget.pubdetailview"
+  ],
+  "RecetteDIY.view.RecetteDetailView": [
+    "widget.recettedetailview"
+  ],
+  "RecetteDIY.view.RecetteList": [
+    "widget.recettelist"
+  ],
   "RecetteDIY.view.RecetteView": [
     "widget.recetteview"
   ],
+  "RecetteDIY.view.RecetteViewContainer": [
+    "widget.recetteviewcontainer"
+  ],
   "RecetteDIY.view.RechercheView": [
     "widget.rechercheview"
+  ],
+  "RecetteDIY.view.RechercheViewContainer": [
+    "widget.rechercheviewcontainer"
   ],
   "RecetteDIY.view.TDLTabPanel": [
     "widget.tdltabpanel"

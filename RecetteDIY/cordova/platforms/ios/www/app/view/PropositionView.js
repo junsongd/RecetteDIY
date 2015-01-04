@@ -9,7 +9,7 @@ Ext.define("RecetteDIY.view.PropositionView", {
     items:[
       {
         xtype: 'tdltabpanel',
-        id: "decisionview_tabbar",
+        id: "propositionview_tabbar",
         tabBarPosition: 'top',
         tabBar: {
           cls:'tabbarmenu',
@@ -23,12 +23,12 @@ Ext.define("RecetteDIY.view.PropositionView", {
           {
             title: 'SuperMarche' ,
             xtype:'navigationview',
-            id: "variety_navigation_view",
+            id: "supermarket_navigation_view",
             scrollable: true,
             defaultBackButtonText: ' ', 
             navigationBar : {
               docked : 'top',
-              cls: 'variety-navigation-bar',
+              cls: 'supermarket-navigation-bar',
               items : [
                 {
                   xtype: 'button',
@@ -52,10 +52,11 @@ Ext.define("RecetteDIY.view.PropositionView", {
           {
             title: 'Restaurant',
             xtype:'navigationview',
-            id: "disease_navigation_view", 
+            id: "restaurant_navigation_view", 
             defaultBackButtonText: ' ',
             navigationBar : {
               docked : 'top',
+              cls: 'supermarket-navigation-bar', 
               items : [
                 {
                   xtype: 'button',
