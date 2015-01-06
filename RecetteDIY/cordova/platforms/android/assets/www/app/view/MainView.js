@@ -88,12 +88,7 @@ Ext.define('RecetteDIY.view.MainView', {
     ],
     listeners:{ 
       painted : function () { // update the list height   
-// ios 7   
-                if (window.device &&
-                    window.device.platform.toLowerCase() == "ios" &&
-                    parseFloat(window.device.version) >= 7.0) {
-                     Ext.select(".x-navigation-bar").applyStyles("height:64px;padding-top:15px"); 
-                 }  
+  
        }
     }
   }

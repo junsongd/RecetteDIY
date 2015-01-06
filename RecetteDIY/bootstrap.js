@@ -665,6 +665,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.controller.RechercheController": [],
   "RecetteDIY.model.PlatPopModel": [],
   "RecetteDIY.store.PlatPopStore": [],
+  "RecetteDIY.view.AboutUsView": [],
   "RecetteDIY.view.AccueilView": [],
   "RecetteDIY.view.AccueilViewContainer": [],
   "RecetteDIY.view.CommunicationDetailView": [],
@@ -675,6 +676,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.view.MainView": [],
   "RecetteDIY.view.PlatPopView": [],
   "RecetteDIY.view.PlusView": [],
+  "RecetteDIY.view.PlusViewContainer": [],
   "RecetteDIY.view.PropositionView": [],
   "RecetteDIY.view.PubDetailView": [],
   "RecetteDIY.view.RecetteDetailView": [],
@@ -1417,6 +1419,9 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.store.PlatPopStore": [
     "store.platpopstore"
   ],
+  "RecetteDIY.view.AboutUsView": [
+    "widget.aboutusview"
+  ],
   "RecetteDIY.view.AccueilView": [
     "widget.accueilview"
   ],
@@ -1446,6 +1451,9 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "RecetteDIY.view.PlusView": [
     "widget.plusview"
+  ],
+  "RecetteDIY.view.PlusViewContainer": [
+    "widget.plusviewcontainer"
   ],
   "RecetteDIY.view.PropositionView": [
     "widget.propositionview"

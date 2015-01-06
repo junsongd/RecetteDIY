@@ -62,7 +62,7 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                                               title: 'Pub 3'
                                             }
                                           );  
-                                      },
+                                      } ,
                                      element: 'element'
                                     }
                                 },

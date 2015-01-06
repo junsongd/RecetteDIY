@@ -72,17 +72,11 @@ Ext.define('RecetteDIY.view.MainView', {
         title: 'Autre',
         iconCls: 'plus-icon', 
         cls:'appcontent',
-        scrollable: true,
-        items: [
+         layout:'fit',
+         items: [ 
           {
-            docked: 'top',
-            xtype: 'titlebar',
-            title: 'Autre',
-            cls:'apptopbar'
-          },
-          { 
-            xtype: 'plusview',
-          }
+            xtype: "plusview" 
+          } 
         ]
       }
     ],

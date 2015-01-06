@@ -36,7 +36,9 @@ Ext.application({
         'RechercheViewContainer',
         'PubDetailView',
         'CommunicationViewContainer',
-        'CommunicationList' 
+        'CommunicationList',
+        'PlusViewContainer',
+        'AboutUsView'
         
            
     ], 

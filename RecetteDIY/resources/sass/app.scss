@@ -269,7 +269,73 @@ $disscusion-text-color : #c9c9c9;
 
 
  
- 
+ #plusview
+ {
+    .autre-menu
+    {
+       height: 20%;
+       margin-bottom: 10%;
+    }
+     .autre-menu .x-label  .x-innerhtml
+    {
+        
+       margin-top: -40px;
+      background: rgba(5,4,4,0.5);
+      z-index: 20;
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      color: #FFFFFF;
+      padding: 3px;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 9px;
+
+    }
+    .x-innerhtml img
+    {
+       
+      width: 100%;
+
+    }
+    .autre-menu-button
+    {
+
+         border-radius: 0;
+         border:solid 1px #ccc;
+        border-right: none;
+        border-left: none;
+        height: 13%;
+        margin-top: 9%;
+        .x-button-label
+        {
+
+          color: #222;
+        }
+    }
+   
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #calculatorview , #decisionview{
   .x-tabbar.x-docked-top .x-tab.x-tab-active
