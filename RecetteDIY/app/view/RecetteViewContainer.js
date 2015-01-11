@@ -15,8 +15,13 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
         xtype : 'recettelist', 
         flex:'1',
         listeners: {
-               itemtap: function(a, b, c, d, e) {
-                   // TerreDeLin.app.getController('RecController').showMessageDetail(a, b, c, d, e);   
+               itemtap: function(element, index, target, record, e, eOpts ) { 
+                                         Ext.getCmp('accueil_navigation_view').push(
+                                         {
+                                            xtype: 'recettedetailview',
+                                            title: record.data.title
+                                          }
+                                        );  
                 },
                painted: function()  {
             

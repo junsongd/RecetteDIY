@@ -664,6 +664,8 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.controller.RecetteController": [],
   "RecetteDIY.controller.RechercheController": [],
   "RecetteDIY.model.PlatPopModel": [],
+  "RecetteDIY.profile.phone": [],
+  "RecetteDIY.profile.tablet": [],
   "RecetteDIY.store.PlatPopStore": [],
   "RecetteDIY.view.AboutUsView": [],
   "RecetteDIY.view.AccueilView": [],
@@ -680,12 +682,13 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.view.PropositionView": [],
   "RecetteDIY.view.PubDetailView": [],
   "RecetteDIY.view.RecetteDetailView": [],
-  "RecetteDIY.view.RecetteList": [],
   "RecetteDIY.view.RecetteView": [],
   "RecetteDIY.view.RecetteViewContainer": [],
   "RecetteDIY.view.RechercheView": [],
   "RecetteDIY.view.RechercheViewContainer": [],
-  "RecetteDIY.view.TDLTabPanel": []
+  "RecetteDIY.view.TDLTabPanel": [],
+  "RecetteDIY.view.phone.RecetteList": [],
+  "RecetteDIY.view.tablet.RecetteList": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1416,6 +1419,8 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.model.PlatPopModel": [
     "widget.platpopmodel"
   ],
+  "RecetteDIY.profile.phone": [],
+  "RecetteDIY.profile.tablet": [],
   "RecetteDIY.store.PlatPopStore": [
     "store.platpopstore"
   ],
@@ -1464,9 +1469,6 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.RecetteDetailView": [
     "widget.recettedetailview"
   ],
-  "RecetteDIY.view.RecetteList": [
-    "widget.recettelist"
-  ],
   "RecetteDIY.view.RecetteView": [
     "widget.recetteview"
   ],
@@ -1481,6 +1483,12 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "RecetteDIY.view.TDLTabPanel": [
     "widget.tdltabpanel"
+  ],
+  "RecetteDIY.view.phone.RecetteList": [
+    "widget.recettelist"
+  ],
+  "RecetteDIY.view.tablet.RecetteList": [
+    "widget.recettelist"
   ]
 });
 

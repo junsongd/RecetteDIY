@@ -9,6 +9,7 @@
     changes and its generated code, it will produce a "merge conflict" that you
     will need to resolve manually.
 */
+var activeProfile = Ext.os.deviceType == "Phone" ? ['phone'] : ['tablet'];
 
 Ext.application({
     name: 'RecetteDIY',
@@ -16,14 +17,13 @@ Ext.application({
     requires: [
         'Ext.MessageBox'
     ],
-
+    profiles: activeProfile,
     views: [
         'MainView',
         'AccueilView',
         'RecetteView',
         'RecetteViewContainer',
-        'RecetteList',
-        'RechercheView',
+         'RechercheView',
         'IngredientView',
         'CommunicationView',
         'PropositionView', 
@@ -85,7 +85,7 @@ Ext.application({
        // Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('RecetteDIY.view.MainView'));
+        //Ext.Viewport.add(Ext.create('RecetteDIY.view.MainView'));
          // ios 7   
                 if (window.device &&
                     window.device.platform.toLowerCase() == "ios" &&

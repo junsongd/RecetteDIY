@@ -1,5 +1,5 @@
  
-Ext.define("RecetteDIY.view.RecetteList", {
+Ext.define("RecetteDIY.view.phone.RecetteList", {
    extend: "Ext.dataview.List",
    alias: "widget.recettelist", 
    config: {

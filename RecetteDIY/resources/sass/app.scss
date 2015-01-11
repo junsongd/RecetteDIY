@@ -131,100 +131,102 @@ $disscusion-text-color : #c9c9c9;
 {
   background-color:$page-bg-color; 
 }
+.x-phone
+{
 
-#accueilviewcontainer
 
-{ 
-    #pub-image-list  img 
-    {
-      width: 100%;      
-    }
-   .carousel_container
-   {
-      height: 25%;
+     #accueilviewcontainer
 
-   }
-   .category-menu-button
-   {
-
-      width: 15%;
-      margin: 3%;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      text-decoration: none;
-       font-size: 60%;
-      border: none;
-      .x-button-label{
-        color: $menu-button-label-color;
-      }
-   }
-     .entre 
-      {
-         background: $entre-bg-color;
-       }
-      .dessert  
-      {
-
-         background: $plat-bg-color;
-       }
-      .plat 
-      {
-           background: $dessert-bg-color;
- 
-      }
-      .autre
-      {
-
-        background: $autre-bg-color;
-       }
-   .category-menu-panel
-   { 
-       margin-top: 9px;
-      border-bottom: solid 1px #BBB; 
-   }
-   .x-carousel-item
-   { 
-      .x-innerhtml
-      {
-        padding: 0px;
-      }
-   }
-  .x-carousel-indicator-active
-   {
-       background-color :$icon-bg-color ;
-       
-   }  
-   .x-carousel-indicator span
-   {
-     width: 5px;
-     height: 5px
-
-   }
-     .platpop-item
-     {
-        width: 49%;
-        height: 50%;
-        float: left;
-        padding: 2px;
-        .platpopimage img
-        { 
-          width: 100%;
+    { 
+        #pub-image-list  img 
+        {
+          width: 100%;      
         }
-    }
-  #platpopbar
-  {
-     border: none;
-     .x-innerhtml
-     {
-       font-size: 16px;
+       #carousel_container
+       {
+           height: 100px;
 
-     }
+       }
+       .category-menu-button
+       {
 
-  }
-    
+          margin: 8px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          text-align: center;
+          text-decoration: none;
+          font-size: 10px;
+          border: 0;
+          .x-button-label{
+            color: $menu-button-label-color;
+          }
+       }
+         .entre 
+          {
+             background: $entre-bg-color;
+           }
+          .dessert  
+          {
 
+             background: $plat-bg-color;
+           }
+          .plat 
+          {
+               background: $dessert-bg-color;
+     
+          }
+          .autre
+          {
+
+            background: $autre-bg-color;
+           }
+       .category-menu-panel
+       { 
+           height: 70px !important;
+           border-bottom: solid 1px #BBB;
+       }
+       .x-carousel-item
+       { 
+          .x-innerhtml
+          {
+            padding: 0px;
+          }
+       }
+      .x-carousel-indicator-active
+       {
+           background-color :$icon-bg-color ;
+           
+       }  
+       .x-carousel-indicator span
+       {
+         width: 5px;
+         height: 5px
+
+       }
+         .platpop-item
+         {
+            width: 50%;
+            height: 50%;
+            float: left;
+            padding: 2px;
+            .platpopimage img
+            { 
+              width: 100%;
+            }
+        }
+      #platpopbar
+      {
+         border: none;
+         .x-innerhtml
+         {
+           font-size: 16px;
+
+         } 
+      }  
+
+    }  
+  
 }
 #recette_list
 {
@@ -318,23 +320,130 @@ $disscusion-text-color : #c9c9c9;
 
 
  }
+ 
+
+
+
+.x-tablet
+{ 
+ #accueilviewcontainer
+
+    { 
+        #pub-image-list  img 
+        {
+          width: 100%;      
+        }
+       #carousel_container
+       {
+          height:250px;
+
+       }
+       .category-menu-button
+       {
+
+           width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          text-align: center;
+          text-decoration: none;
+          border: none;
+          margin: 20px;
+          font-size: 20px;
+          .x-button-label{
+            color: $menu-button-label-color;
+          }
+       }
+         .entre 
+          {
+             background: $entre-bg-color;
+           }
+          .dessert  
+          {
+
+             background: $plat-bg-color;
+           }
+          .plat 
+          {
+               background: $dessert-bg-color;
+     
+          }
+          .autre
+          {
+
+            background: $autre-bg-color;
+           }
+       .category-menu-panel
+       { 
+          border-bottom: solid 1px #BBB;
+          height: 140px !important;
+       }
+       .x-carousel-item
+       { 
+          .x-innerhtml
+          {
+            padding: 0px;
+          }
+       }
+      .x-carousel-indicator-active
+       {
+           background-color :$icon-bg-color ;
+           
+       }  
+       .x-carousel-indicator span
+       {
+         width: 5px;
+         height: 5px
+
+       }
+         .platpop-item
+         {
+            width: 50%;
+            height: 50%;
+            float: left;
+            padding: 2px;
+            .platpopimage img
+            { 
+              width: 100%;
+            }
+        }
+      #platpopbar
+      {
+         border: none;
+         .x-innerhtml
+         {
+           font-size: 16px;
+
+         } 
+      }  
+
+    }  
+
+
+  .platpop-item-tablet
+{
+
+   width: 50%;
+   .platpopimage img
+   {
+     width: 100%;
+
+   } 
+  .platpopimage  
+   {
+      padding: 5px;
+
+   } 
+  
+}
 
 
 
 
+      
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 #calculatorview , #decisionview{

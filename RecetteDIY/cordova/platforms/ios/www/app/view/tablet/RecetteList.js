@@ -1,7 +1,22 @@
-Ext.define("RecetteDIY.view.PlatPopView", {
+ 
+Ext.define("RecetteDIY.view.tablet.RecetteList", {
    extend: 'Ext.Container',
-   xtype: 'platpopview',
-     config: {
+   alias: "widget.recettelist",  
+
+   config: {
+     id: 'recette_list',
+        Cls: 'recette_list',
+           plugins: [
+        {
+            xclass: 'Ext.plugin.PullRefresh',
+            pullText: 'Mise à jour!',
+            loadedText :'Le chargement est fini',
+            loadingText :'Chargement...',
+            pullRefreshText: 'Pull-down pour Mise à jour!',
+            releaseText: 'Lâcher pour Mise à jour...',
+            lastUpdatedText:'Dernière mise à jour'
+         }
+      ], 
         items: [
             {
                 xtype: 'dataview',
@@ -11,7 +26,7 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                 inline: {
                     wrap: true
                 }, 
-                itemCls: 'platpop-item',
+                itemCls: 'platpop-item-tablet',
                 itemTpl: [ 
                     '<div class="platpopimage">',
                     '   <img src= "{thumbnail_url} "> </img>',
@@ -33,17 +48,13 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                                    
                            },
                 },
-            },
-            {
-                xtype: 'toolbar',
-                docked: 'top',
-                id:'platpopbar',
-                title: 'Les plats populaires'
-            }
+            } 
         ]
     },
-   initialize: function() {
-     
-   }
+
+
+
+
+
 
 });

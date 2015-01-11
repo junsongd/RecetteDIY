@@ -132,7 +132,8 @@
         "app/controller/",
         "app/view/",
         "app/model/",
-        "app/store/"
+        "app/store/",
+        "app/profile/"
     ],
 
     /**
