@@ -13,27 +13,23 @@ Ext.define("RecetteDIY.view.CommunicationView", {
             title: 'Communication',
             xtype:'navigationview',
             id: "communication_navigation_view",
+            defaultBackButtonText: ' ',
             navigationBar : {
               docked : 'top',
               items : [
-                {
-                  xtype: 'button',
-                  html: 'i',
-                  cls:'buttoninfo',
-                  align : 'right',
-                  listeners:{
-                    tap : function () {
-
-                       Ext.getCmp('communication_navigation_view').push(
-                                          {
-                                            xtype: 'communicationdetailview',
-                                            title: 'Detail'
-                                          }
-                                        );  
-                       
-                    } 
-                  }
-                }
+               
+                { 
+                            xtype: 'button',
+                            id:'disscution-create-button',
+                            iconCls: 'compose',
+                            align: 'right',
+                            listeners:{
+                                        tap : function () {
+                                           RecetteDIY.app.getController('RechercheController').showOptions(this); 
+                                           
+                                        } 
+                                      }
+                         }
               ]
             },
              items : [ 

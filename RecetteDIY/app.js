@@ -38,9 +38,10 @@ Ext.application({
         'CommunicationViewContainer',
         'CommunicationList',
         'PlusViewContainer',
-        'AboutUsView'
-        
-           
+        'AboutUsView',
+        'RecetteRechercheDetailView',
+        'RecetteRechercheResultViewContainer',
+        'RecetteRechercheResultView' 
     ], 
    controllers:
    [
@@ -51,15 +52,18 @@ Ext.application({
      'IngredientController',
      'ContactController',
      'PropositionController',
-     'DisscutionController'
+     'DisscutionController',
+
     ],
    stores: [  
 
-     'PlatPopStore'
+     'PlatPopStore',
+     'CommunicationStore'
    ],
    models:[ 
      
-     'PlatPopModel'
+     'PlatPopModel',
+     'CommunicationModel'
    ], 
 
     icon: {

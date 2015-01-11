@@ -1,9 +1,8 @@
  
-Ext.define("RecetteDIY.view.RecetteViewContainer", {
+Ext.define("RecetteDIY.view.RecetteRechercheResultViewContainer", {
   extend: 'Ext.Container',
-  xtype: 'recetteviewcontainer',
+  xtype: 'recetterechercheresultviewcontainer',
   config: {
-    id:'recetteviewcontainer', 
     layout:'hbox', 
     showAnimation:{
                type:'slide',
@@ -12,13 +11,13 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
             },  
     items: [
       {  
-        xtype : 'recettelist', 
+        xtype : 'recetterechercheresultlist', 
         flex:'1',
         listeners: {
                itemtap: function(element, index, target, record, e, eOpts ) { 
-                                         Ext.getCmp('accueil_navigation_view').push(
+                                         Ext.getCmp('recherche_navigation_view').push(
                                          {
-                                            xtype: 'recettedetailview',
+                                            xtype: 'recetterecherchedetailview',
                                             title: record.data.title
                                           }
                                         );  
@@ -29,22 +28,8 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
 
                } 
             }
-      },
-       //Contenue a droite
-     {
-            xtype: "panel",
-            id: "recetteDroite",
-            cls: "",
-            flex: "1",
-            layout:'vbox',
-            scrollable: 'vertical',
-            style: 'margin: auto !important; text-align: center;',
-            maskOnOpen: false,
-            hidden:true,
-            showAnimation:{
-               type:'slide',
-            }  
-         },
+      }
+      
     ],
        
   },

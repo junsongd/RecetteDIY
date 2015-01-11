@@ -14,8 +14,14 @@ Ext.define("RecetteDIY.view.CommunicationViewContainer", {
         xtype : 'communicationlist', 
         flex:'1',
         listeners: {
-               itemtap: function(a, b, c, d, e) {
-                   // TerreDeLin.app.getController('RecController').showMessageDetail(a, b, c, d, e);   
+               itemtap: function(a, b, c, d, e) { 
+                  
+                     Ext.getCmp('communication_navigation_view').push(
+                                          {
+                                            xtype: 'communicationdetailview',
+                                            title: 'Detail'
+                                          }
+                                        ); 
                 },
                painted: function()  {
             

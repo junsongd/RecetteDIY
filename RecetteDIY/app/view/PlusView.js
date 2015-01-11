@@ -12,6 +12,7 @@ Ext.define("RecetteDIY.view.PlusView", {
           {
                  xtype:'navigationview',
                  id: "plus_navigation_view",
+                  defaultBackButtonText: ' ',
                   navigationBar : {
                   docked : 'top', 
                    

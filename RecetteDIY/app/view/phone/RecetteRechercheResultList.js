@@ -1,10 +1,10 @@
  
-Ext.define("RecetteDIY.view.CommunicationList", {
+ Ext.define("RecetteDIY.view.phone.RecetteRechercheResultList", {
    extend: "Ext.dataview.List",
-   alias: "widget.communicationlist", 
+   alias: "widget.recetterechercheresultlist", 
    config: {
-      id: 'communicationlist',
-      Cls: 'communicationlist', 
+      id: 'recette_recherche_result_list',
+      Cls: 'recette_list', 
       Loadmask: false,
        plugins: [
         {
@@ -18,9 +18,8 @@ Ext.define("RecetteDIY.view.CommunicationList", {
          }
       ],
       emptyText: '</pre><div class="notes-list-empty-text">Chargement échoué, verifiez votre connexion  et relancez l\'applicaiton.</div><pre>',
-      itemTpl:  '<div class ="message-list-item"><div class="message-list-item-content"> <div class="message-list-item-author">{title}</div>  <div class="message-list-item-date">{date}</div> <div class="message-list-item-image"><img src="{thumbnail_url}"></img></div> <div class="message-list-item-message">{content:ellipsis(150, true)}</div>  </div> </div>',
-      store: 'communicationstore'
-
+      itemTpl: '<div class ="recette-list-item"><div class="recette-list-item-content"> <div class="recette-list-item-image"><img src=" {thumbnail_url}"></img></div><div class="recette-list-item-title">{title}</div> </div></div>',
+      store: 'platpopstore'
        
     }
 });

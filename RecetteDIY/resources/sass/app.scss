@@ -228,7 +228,7 @@ $disscusion-text-color : #c9c9c9;
     }  
   
 }
-#recette_list
+#recette_list ,#recette_recherche_result_list
 {
 
     .x-list-item
@@ -477,70 +477,74 @@ $disscusion-text-color : #c9c9c9;
    }
 
 }
-
-
-
-
-
-
-
-
-
  
-
-
-#calculatorview , #decisionview{
-  .x-tabbar.x-docked-top .x-tab.x-tab-active
-  {
-    background-color :$main-background;
-    .x-button-label
-    { 
-      color:$label-text-color;
-    }
-  } 
-  .x-tabbar.x-docked-top .x-tab
-  { 
-    border: 1px solid $main-background;
-  }
-  .x-tabbar.x-docked-top .x-tab .x-button-label
-  {
-    color:$main-background; 
-  }
-}
-.x-inner .x-panel-inner
+.subject-option-menus
 {
-  width: 100% !important; 
-}
-
- 
-
-#densite_navigation_view
-{
-  .densite-navigation-bar {
-    background-color: $light-grey-background;
-    border-bottom: 1px solid $border-color; 
-    .x-title {
-      color: $main-background;
-    }  
-    .x-innerhtml
+    .x-html
     {
-      font-size :16px;
+       border-radius: 3px; 
     }
-  }
-  .x-navigationview
-  { 
-     .x-button-back .x-button-label
-     {
-        color: $main-background; 
-     }
+   .subject-option-button
+   {
+       
+       border: none;
+      border-radius: 0; 
 
-  }
+      .x-button-label
+      {
+        color:$icon-bg-color ;
 
-  
-
+      }
+    }
 } 
+.x-picker
+{
+   
+  .x-picker-item  
+  {
+    color:$icon-bg-color ;
+
+  }
+}
+/*Cancel Button styles overriding*/
+.x-toolbar-dark .x-button .x-button-label { 
+    color: #FF0000;
+    background-image: none;
+}
+ 
+
+/*Done Button styles overriding*/
+.x-button.x-button-action .x-button-label
+{
+    color: #75d628;
+    background-image: none;
+}
+ 
+.x-button-back 
+{
+
+  padding-left: 5px !important;
+ 
+}
+.x-button-back:before
+{
+ 
+  color:$icon-bg-color !important;
+}
 
   
+ 
+/* communicaiton */
+  #communicationview
+  { 
+      .compose::before{
+         color:$icon-bg-color !important;
+         margin-top: 5px;
+
+      }
+
+
+  }
  
 /* footer */
 .footer-tabbar {
