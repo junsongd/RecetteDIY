@@ -435,13 +435,56 @@ $disscusion-text-color : #c9c9c9;
    } 
   
 }
-
-
-
-
-      
+ 
 
 }
+
+#rechercheviewcontainer
+{
+   .x-form-label span
+   {
+     font-size: 15px;
+     color: #888;
+
+   }
+   .x-field-input
+   {
+    border:none;
+    color : $icon-bg-color ;
+    font-size: 15px;
+
+    input
+    {
+       color : $icon-bg-color ;
+    }
+
+   }
+
+   .recherche-container-line
+   {
+     margin: auto;
+     margin-top: 35px;
+     .recherche-button
+     {
+       background: $icon-bg-color ;
+       border: none;
+
+     }
+     .x-button-label
+     {
+      color: #FFFFFF;
+     }
+   }
+
+}
+
+
+
+
+
+
+
+
 
  
 
