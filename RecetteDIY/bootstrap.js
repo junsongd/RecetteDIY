@@ -663,9 +663,11 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.controller.PropositionController": [],
   "RecetteDIY.controller.RecetteController": [],
   "RecetteDIY.controller.RechercheController": [],
+  "RecetteDIY.model.CommunicationModel": [],
   "RecetteDIY.model.PlatPopModel": [],
   "RecetteDIY.profile.phone": [],
   "RecetteDIY.profile.tablet": [],
+  "RecetteDIY.store.CommunicationStore": [],
   "RecetteDIY.store.PlatPopStore": [],
   "RecetteDIY.view.AboutUsView": [],
   "RecetteDIY.view.AccueilView": [],
@@ -682,13 +684,18 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.view.PropositionView": [],
   "RecetteDIY.view.PubDetailView": [],
   "RecetteDIY.view.RecetteDetailView": [],
+  "RecetteDIY.view.RecetteRechercheDetailView": [],
+  "RecetteDIY.view.RecetteRechercheResultView": [],
+  "RecetteDIY.view.RecetteRechercheResultViewContainer": [],
   "RecetteDIY.view.RecetteView": [],
   "RecetteDIY.view.RecetteViewContainer": [],
   "RecetteDIY.view.RechercheView": [],
   "RecetteDIY.view.RechercheViewContainer": [],
   "RecetteDIY.view.TDLTabPanel": [],
   "RecetteDIY.view.phone.RecetteList": [],
-  "RecetteDIY.view.tablet.RecetteList": []
+  "RecetteDIY.view.phone.RecetteRechercheResultList": [],
+  "RecetteDIY.view.tablet.RecetteList": [],
+  "RecetteDIY.view.tablet.RecetteRechercheResultList": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1416,11 +1423,17 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.controller.PropositionController": [],
   "RecetteDIY.controller.RecetteController": [],
   "RecetteDIY.controller.RechercheController": [],
+  "RecetteDIY.model.CommunicationModel": [
+    "widget.communicationmodel"
+  ],
   "RecetteDIY.model.PlatPopModel": [
     "widget.platpopmodel"
   ],
   "RecetteDIY.profile.phone": [],
   "RecetteDIY.profile.tablet": [],
+  "RecetteDIY.store.CommunicationStore": [
+    "store.communicationstore"
+  ],
   "RecetteDIY.store.PlatPopStore": [
     "store.platpopstore"
   ],
@@ -1469,6 +1482,15 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.RecetteDetailView": [
     "widget.recettedetailview"
   ],
+  "RecetteDIY.view.RecetteRechercheDetailView": [
+    "widget.recetterecherchedetailview"
+  ],
+  "RecetteDIY.view.RecetteRechercheResultView": [
+    "widget.recetterechercheresultview"
+  ],
+  "RecetteDIY.view.RecetteRechercheResultViewContainer": [
+    "widget.recetterechercheresultviewcontainer"
+  ],
   "RecetteDIY.view.RecetteView": [
     "widget.recetteview"
   ],
@@ -1487,8 +1509,14 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.phone.RecetteList": [
     "widget.recettelist"
   ],
+  "RecetteDIY.view.phone.RecetteRechercheResultList": [
+    "widget.recetterechercheresultlist"
+  ],
   "RecetteDIY.view.tablet.RecetteList": [
     "widget.recettelist"
+  ],
+  "RecetteDIY.view.tablet.RecetteRechercheResultList": [
+    "widget.recetterechercheresultlist"
   ]
 });
 

@@ -4,8 +4,8 @@ Ext.define('RecetteDIY.profile.phone', {
    config: {
       name: 'phone',
        views: [
-        
-        'RecetteList' 
+         'RecetteList' ,
+        'RecetteRechercheResultList'
            
     ] 
    },

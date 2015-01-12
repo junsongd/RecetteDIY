@@ -29,19 +29,7 @@ Ext.define("RecetteDIY.view.PropositionView", {
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar',
-              items : [
-                {
-                  xtype: 'button',
-                  html: 'i',
-                  cls:'buttoninfo',
-                  align : 'right',
-                  listeners:{
-                    tap : function () {
-
-                     } 
-                  }
-                }
-              ]
+              
             },
             items:[
               { 
@@ -57,18 +45,7 @@ Ext.define("RecetteDIY.view.PropositionView", {
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar', 
-              items : [
-                {
-                  xtype: 'button',
-                  html: 'i',
-                  cls:'buttoninfo',
-                  align : 'right',
-                  listeners:{
-                    tap : function () {
-                     } 
-                  }
-                }
-              ]
+               
             },
             items : [ 
               { 

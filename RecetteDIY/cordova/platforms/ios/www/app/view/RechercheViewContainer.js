@@ -10,10 +10,15 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
         
            {
                 xtype: 'fieldset',
+
                 items: [{
                     xtype: 'selectfield',
                     label: 'Piment:',
                     name: 'epice-select',
+                     defaultPhonePickerConfig : {
+                                                      doneButton : 'Valider',
+                                                      cancelButton : 'Annuler'
+                                                 },
                     options: [{
                         text: 'Sans',
                         value: 0
@@ -42,6 +47,10 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                     xtype: 'selectfield',
                     label: 'Difficulté:',
                     name: 'difficulte-select',
+                     defaultPhonePickerConfig : {
+                                                    doneButton : 'Valider',
+                                                    cancelButton : 'Annuler'
+                                                },
                     options: [{
                         text: 'Indifférent',
                         value: 0
@@ -70,6 +79,10 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                     xtype: 'selectfield',
                     label: 'Temps:',
                     name: 'time-select',
+                     defaultPhonePickerConfig : {
+                                                      doneButton : 'Valider',
+                                                      cancelButton : 'Annuler'
+                                                 },
                     options: [{
                         text: 'Court',
                         value: 0
@@ -103,7 +116,7 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                                     tap : function(){
                                         Ext.getCmp('recherche_navigation_view').push(
                                          {
-                                            xtype: 'recetteview',
+                                            xtype: 'recetterechercheresultview',
                                             title: 'Résultats'
                                           }
                                         );  
@@ -122,7 +135,7 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
       ],
    },
    initialize: function() {
-     
+           
      
    }
 

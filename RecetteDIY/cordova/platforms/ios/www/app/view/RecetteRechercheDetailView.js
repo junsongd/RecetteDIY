@@ -1,16 +1,15 @@
-Ext.define("RecetteDIY.view.CommunicationDetailView", {
+Ext.define("RecetteDIY.view.RecetteRechercheDetailView", {
    extend: 'Ext.Container',
-   xtype: 'communicationdetailview',
+   xtype: 'recetterecherchedetailview',
+   scrollable: true,
    config: {
-      id: 'communicationdetailview',
-      width: '100%',
+      id: 'recetterecherchedetailview', width: '100%',
       layout:
       {
          type: 'vbox'
       }, 
-      html:'communication detail page',
+        
       items: [ 
-
            
       ],
       listeners: {

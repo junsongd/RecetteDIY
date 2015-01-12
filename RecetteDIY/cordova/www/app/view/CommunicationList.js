@@ -18,15 +18,9 @@ Ext.define("RecetteDIY.view.CommunicationList", {
          }
       ],
       emptyText: '</pre><div class="notes-list-empty-text">Chargement échoué, verifiez votre connexion  et relancez l\'applicaiton.</div><pre>',
-      itemTpl: '<div class ="message-list-item"><div class="message-list-item-content"> <div class="message-list-item-author">{author}</div> <div class="message-list-item-date">{date}</div><div class="message-list-item-message">{message:ellipsis(150, true)}</div></div></div>',
-      data: [
-             { title: '',   author: ' Jhon DOE' ,date :' il y a heures', message :'Lorem ipsum dolor sit amet, modo legere ius cu, posidonium appellantur vix no. An his persius signiferumque. Quo illum delicata postulant in, facilis maiestatis per id, an duo verear accumsan. No mel clita dolore facete, magna integre docendi vel id. Movet laudem detracto mel ea. No tation lobortis pro, ius scripserit omittantur ad.' },
-             { title: 'Lin & Innovation, perspectives d\'avenir  ?',   author: ' Jhon DOE' ,date :' il y a heures', message :'Lorem ipsum dolor sit amet, modo legere ius cu, posidonium appellantur vix no. An his persius signiferumque. Quo illum delicata postulant in, facilis maiestatis per id, an duo verear accumsan. No mel clita dolore facete, magna integre docendi vel id. Movet laudem detracto mel ea. No tation lobortis pro, ius scripserit omittantur ad.' },
-             { title: 'Lin & Innovation, perspectives d\'avenir   ?',   author: ' Jhon DOE' ,date :' il y a heures', message :'Lorem ipsum dolor sit amet, modo legere ius cu, posidonium appellantur vix no. An his persius signiferumque. Quo illum delicata postulant in, facilis maiestatis per id, an duo verear accumsan. No mel clita dolore facete, magna integre docendi vel id. Movet laudem detracto mel ea. No tation lobortis pro, ius scripserit omittantur ad.' },
-             { title: 'Lin & Innovation, perspectives d\'avenir  ?',   author: ' Jhon DOE' ,date :' il y a heures', message :'Lorem ipsum dolor sit amet, modo legere ius cu, posidonium appellantur vix no. An his persius signiferumque. Quo illum delicata postulant in, facilis maiestatis per id, an duo verear accumsan. No mel clita dolore facete, magna integre docendi vel id. Movet laudem detracto mel ea. No tation lobortis pro, ius scripserit omittantur ad.' },
-             { title: 'Lin & Innovation, perspectives d\'avenir   ?',   author: ' Jhon DOE' ,date :' il y a heures', message :'Lorem ipsum dolor sit amet, modo legere ius cu, posidonium appellantur vix no. An his persius signiferumque. Quo illum delicata postulant in, facilis maiestatis per id, an duo verear accumsan. No mel clita dolore facete, magna integre docendi vel id. Movet laudem detracto mel ea. No tation lobortis pro, ius scripserit omittantur ad.' },
+      itemTpl:  '<div class ="message-list-item"><div class="message-list-item-content"> <div class="message-list-item-author">{title}</div>  <div class="message-list-item-date">{date}</div> <div class="message-list-item-image"><img src="{thumbnail_url}"></img></div> <div class="message-list-item-message">{content:ellipsis(150, true)}</div>  </div> </div>',
+      store: 'communicationstore'
 
-           ] 
        
     }
 });

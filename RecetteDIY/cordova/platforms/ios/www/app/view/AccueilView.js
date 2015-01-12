@@ -11,6 +11,7 @@ Ext.define("RecetteDIY.view.AccueilView", {
           {
                  xtype:'navigationview',
                  id: "accueil_navigation_view",
+                 defaultBackButtonText: ' ',
                  navigationBar : {
                   docked : 'top',
                   title:'Accueil',
@@ -38,7 +39,7 @@ Ext.define("RecetteDIY.view.AccueilView", {
                 ]
           }  
       ],
-      
+
    },
    initialize: function() {
      

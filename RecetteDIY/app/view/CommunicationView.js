@@ -25,7 +25,7 @@ Ext.define("RecetteDIY.view.CommunicationView", {
                             align: 'right',
                             listeners:{
                                         tap : function () {
-                                           RecetteDIY.app.getController('RechercheController').showOptions(this); 
+                                           RecetteDIY.app.getController('DisscutionController').showOptions(this); 
                                            
                                         } 
                                       }

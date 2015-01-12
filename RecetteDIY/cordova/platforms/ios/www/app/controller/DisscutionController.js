@@ -1,5 +1,6 @@
 Ext.define('RecetteDIY.controller.DisscutionController', {
    extend: 'Ext.app.Controller',
+    _currentRecord : null,
    config: {
      
    },
@@ -7,7 +8,6 @@ Ext.define('RecetteDIY.controller.DisscutionController', {
       
    }, 
     
-  
 showOptions: function(me) { 
 
         var a = Ext.create('Ext.Panel', {
@@ -25,8 +25,8 @@ showOptions: function(me) {
             // Make it hidden by default
             cls: "subject-option-menus",
             // Set the width and height of the panel
-            width: 250,
-            height: 165,
+            width: 170,
+            height: 78,
             maxHeight: '100%',
             maxWidth: '100%',
            
@@ -35,44 +35,21 @@ showOptions: function(me) {
             // Style the content and make it scrollable
             styleHtmlContent: true,
             // Insert a title docked at the top with a title
-            items: [
-                
-                 {
-                    xtype: "label",
-                    id:'subject-option-label',
-                    html: "Discussions"
-                    
-                }, 
+            items: [ 
                 {
                     xtype: "button",
                     id:'subject-option-text',
                     cls:'subject-option-button',
-                    html: "Texte",
+                    html: "Message",
                      listeners: {
                         tap: function(me) {
-                              Ext.Viewport.remove(a);
-
-                              if(Ext.getCmp('messageDroite').isHidden())
-                               {
+                              Ext.Viewport.remove(a); 
                                 // create new subject
-                                  var email = "terredeline@test.fr";
-                                  var subject = "";
+                                  var email = "junsong.dong@gmail.com";
+                                  var subject = "Communication";
                                   var body = "";
                                   var attachement = [];
-                                  TerreDeLin.app.getController('MainController').sentEmail(email,subject,body,attachement); 
-
-                               }
-                               else
-                               {
-                                 // answer the subject
-                                  var email = "terredeline@test.fr";
-                                 // var subject =  Ext.getCmp('subject-title-detail').getHtml( );
-                                  var subject ='Lin & Innovation, perspectives d\'avenir?';
-                                  var body = "";
-                                  var attachement = [];
-                                  TerreDeLin.app.getController('MainController').sentEmail(email,subject,body,attachement);
-
-                               }
+                                  RecetteDIY.app.getController('MainController').sentEmail(email,subject,body,attachement);  
                               
                          }
                     }
@@ -81,50 +58,22 @@ showOptions: function(me) {
                     xtype: "button",
                     id:'subject-option-text-image',
                      cls:'subject-option-button',
-                    html: "Texte + Image",
+                    html: "Photo",
                      listeners: {
                         tap: function(me) {
                           Ext.Viewport.remove(a);
-                            var email = "terredeline@test.fr";
-                              var subject = "Terre de lin";
+                            var email = "junsong.dong@gmail.com";
+                              var subject = "Communication";
                               var body = ""; 
-                              TerreDeLin.app.getController('MainController').takePhotoButtonClicked(email,subject,body); 
-
-                               if(Ext.getCmp('messageDroite').isHidden())
-                               {
-                                // create new subject
-                                  var email = "terredeline@test.fr";
-                                  var subject = "";
-                                  var body = "";
-                                    TerreDeLin.app.getController('MainController').takePhotoButtonClicked(email,subject,body);  
-                               }
-                               else
-                               {
-                                 // answer the subject
-                                  var email = "terredeline@test.fr";
-                                  //var subject =  Ext.getCmp('subject-title-detail').getHtml( );
-                                  var subject ='Lin & Innovation, perspectives d\'avenir?'; 
-                                  var body = "";
-                                    TerreDeLin.app.getController('MainController').takePhotoButtonClicked(email,subject,body);  
-                               } 
+                              RecetteDIY.app.getController('MainController').takePhotoButtonClicked(email,subject,body);  
+                              
                         }
                     }
-                },
-                {
-                    xtype: "button",
-                    id:'subject-option-cancel',
-                    cls:'subject-option-button',
-                    html: "Annuler", 
-                    listeners: {
-                        tap: function(me) {
-                         Ext.Viewport.remove(a);
-                           
-                        }
-                    }
-                }
+                } 
              ]
         });
          Ext.Viewport.add(a);
+         a.showBy(me);
      },
   showMessageList : function ()
   {

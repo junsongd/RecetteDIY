@@ -493,6 +493,7 @@ $disscusion-text-color : #c9c9c9;
       .x-button-label
       {
         color:$icon-bg-color ;
+        font-size: 16px;
 
       }
     }
@@ -535,17 +536,114 @@ $disscusion-text-color : #c9c9c9;
   
  
 /* communicaiton */
-  #communicationview
+.x-phone
+{
+   #communicationview
   { 
       .compose::before{
          color:$icon-bg-color !important;
          margin-top: 5px;
 
       }
+      .x-list-item
+      {
 
+          height: 155px;
+
+      }
+      .message-list-item-image
+      {
+
+        width: 30%;
+        float: left;
+        img {
+           width: 100%;
+        }
+      }
+      .message-list-item-message
+      {
+
+        padding: 6px;
+        float: left;
+        width: 70%;
+        font-size: 11px;
+      }
+      .message-list-item-date
+      {
+        font-size: 12px;
+        font-style: italic;
+         padding: 5px;
+      }
+      
 
   }
- 
+
+
+
+}
+  
+.x-tablet
+{
+   #communicationview
+  { 
+      .compose::before{
+         color:$icon-bg-color !important;
+         margin-top: 5px;
+
+      }
+      .x-list-item
+      {
+
+          height: 300px;
+
+      }
+      .message-list-item-image
+      {
+
+        width: 30%;
+        float: left;
+        img {
+           width: 100%;
+        }
+      }
+      .message-list-item-message
+      {
+
+        padding: 6px;
+        float: left;
+        width: 70%;
+        font-size: 11px;
+      }
+      .message-list-item-date
+      {
+        font-size: 12px;
+        font-style: italic;
+         padding: 5px;
+      }
+      
+
+  }
+
+
+
+}
+
+#communicationdetailview
+{
+
+   #communication-detail-panel
+   {
+     padding: 15px;
+   }
+}
+
+
+
+
+
+
+
+
 /* footer */
 .footer-tabbar {
   .x-tab {
