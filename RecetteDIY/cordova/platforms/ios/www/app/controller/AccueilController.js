@@ -1,12 +1,1 @@
-Ext.define('RecetteDIY.controller.AccueilController', {
-     extend: 'Ext.app.Controller', 
-     config: {
-        
-    },
-    init: function() {
-      
-    }, 
-   
-    
- 
-});
+Ext.define("RecetteDIY.controller.AccueilController",{extend:"Ext.app.Controller",config:{},init:function(){},loadAdvertise:function(){var a=Ext.getStore("adsstore");a.load({callback:function(c,b,e){myCarousel=Ext.getCmp("pub-image-list");myCarousel.setHtml("");for(var d=0;d<c.length;d++){myCarousel.add({html:'<img class= "advertise-image" data-index ='+d+" src="+c[d].data.thumbnail_url+">"})}},scope:this})},bindClick:function(){$(".advertise-image").each(function(a){$(this).on("click",function(){var b=$(this).data("index");RecetteDIY.app.getController("AccueilController").displayAdsDetail(b)})})},unbindClick:function(){$(".advertise-image").unbind("click")},displayAdsDetail:function(b){var a=Ext.getStore("adsstore");var c=a.getAt(b);var d=c.data.title;Ext.getCmp("accueil_navigation_view").push({xtype:"pubdetailview",title:d,record:c})}});

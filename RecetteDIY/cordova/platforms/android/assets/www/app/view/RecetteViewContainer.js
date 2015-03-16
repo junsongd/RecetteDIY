@@ -3,7 +3,6 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
   extend: 'Ext.Container',
   xtype: 'recetteviewcontainer',
   config: {
-    id:'recetteviewcontainer', 
     layout:'hbox', 
     showAnimation:{
                type:'slide',
@@ -15,8 +14,13 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
         xtype : 'recettelist', 
         flex:'1',
         listeners: {
-               itemtap: function(a, b, c, d, e) {
-                   // TerreDeLin.app.getController('RecController').showMessageDetail(a, b, c, d, e);   
+               itemtap: function(element, index, target, record, e, eOpts ) { 
+                                         Ext.getCmp('accueil_navigation_view').push(
+                                         {
+                                            xtype: 'recettedetailview',
+                                            title: record.data.title
+                                          }
+                                        );  
                 },
                painted: function()  {
             
@@ -24,22 +28,8 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
 
                } 
             }
-      },
-       //Contenue a droite
-     {
-            xtype: "panel",
-            id: "recetteDroite",
-            cls: "",
-            flex: "1",
-            layout:'vbox',
-            scrollable: 'vertical',
-            style: 'margin: auto !important; text-align: center;',
-            maskOnOpen: false,
-            hidden:true,
-            showAnimation:{
-               type:'slide',
-            }  
-         },
+      }
+      
     ],
        
   },

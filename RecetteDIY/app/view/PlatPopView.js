@@ -20,7 +20,7 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'platstore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 

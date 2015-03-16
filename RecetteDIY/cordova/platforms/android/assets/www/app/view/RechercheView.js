@@ -11,24 +11,10 @@ Ext.define("RecetteDIY.view.RechercheView", {
           {
                  xtype:'navigationview',
                  id: "recherche_navigation_view",
+                  defaultBackButtonText: ' ',
                  navigationBar : {
                   docked : 'top',
-                  title:'Recherche',
-                  items : [
-                    /**
-                      {
-                        xtype: 'button',
-                        html: 'i',
-                        cls:'buttoninfo',
-                        align : 'right',
-                        listeners:{
-                          tap : function () {
-
-                            
-                          } 
-                        }
-                      } **/
-                  ]
+                  title:'Recherche'  
                 },
                 items : [ 
                   { 
@@ -40,8 +26,7 @@ Ext.define("RecetteDIY.view.RechercheView", {
       ],
    },
    initialize: function() {
-     
-     
+      
    }
 
 });

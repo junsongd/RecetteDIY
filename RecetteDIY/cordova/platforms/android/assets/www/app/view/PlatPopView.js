@@ -26,7 +26,7 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                                 
                                          Ext.getCmp('accueil_navigation_view').push(
                                          {
-                                            xtype: 'recetteview',
+                                            xtype: 'recettedetailview',
                                             title: record.data.title
                                           }
                                         );  

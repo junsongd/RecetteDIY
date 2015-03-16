@@ -11,7 +11,7 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
             xtype: "container",
             id : "carousel_container",
             layout:'fit',
-            flex:2,
+            
             items: [
 
                 {//give it an xtype of list for the list component
@@ -62,7 +62,7 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                                               title: 'Pub 3'
                                             }
                                           );  
-                                      },
+                                      } ,
                                      element: 'element'
                                     }
                                 },
@@ -76,7 +76,7 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
 
              {
                     xtype:'panel',
-                    flex:1,
+                    
                     cls:'category-menu-panel',
                     layout: {
                       pack: 'center',
@@ -147,7 +147,7 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                   }, 
                   {
                     xtype: 'platpopview' ,
-                    flex:4
+                    flex:1
 
                   }, 
  

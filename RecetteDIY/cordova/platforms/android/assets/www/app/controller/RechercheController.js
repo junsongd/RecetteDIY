@@ -3,6 +3,7 @@ Ext.define('RecetteDIY.controller.RechercheController', {
      config: {
         
     },
+    
     init: function() {
       
     },  

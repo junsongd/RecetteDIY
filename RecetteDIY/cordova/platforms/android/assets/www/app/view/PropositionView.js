@@ -24,28 +24,15 @@ Ext.define("RecetteDIY.view.PropositionView", {
             title: 'SuperMarche' ,
             xtype:'navigationview',
             id: "supermarket_navigation_view",
-            scrollable: true,
-            defaultBackButtonText: ' ', 
+             defaultBackButtonText: ' ', 
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar',
-              items : [
-                {
-                  xtype: 'button',
-                  html: 'i',
-                  cls:'buttoninfo',
-                  align : 'right',
-                  listeners:{
-                    tap : function () {
-
-                     } 
-                  }
-                }
-              ]
+              
             },
             items:[
               { 
-                
+                  xtype: 'supermarketview', 
               } 
             ]
           },
@@ -57,22 +44,11 @@ Ext.define("RecetteDIY.view.PropositionView", {
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar', 
-              items : [
-                {
-                  xtype: 'button',
-                  html: 'i',
-                  cls:'buttoninfo',
-                  align : 'right',
-                  listeners:{
-                    tap : function () {
-                     } 
-                  }
-                }
-              ]
+               
             },
             items : [ 
               { 
-                 
+                  xtype: 'restaurantview' 
               } 
             ]
           }

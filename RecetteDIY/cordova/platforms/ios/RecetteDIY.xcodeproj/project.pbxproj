@@ -349,11 +349,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 510;
-				TargetAttributes = {
-					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = 67BAS2R2V6;
-					};
-				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RecetteDIY" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -513,7 +508,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Junsong DONG (AZ7EPGXP7Q)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -538,6 +533,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = RecetteDIY;
+				PROVISIONING_PROFILE = "fd8db2a2-0efb-4a67-bdd6-ba65612718b6";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -547,7 +543,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: NetDevices";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecetteDIY/RecetteDIY-Prefix.pch";
@@ -570,7 +566,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = RecetteDIY;
-				PROVISIONING_PROFILE = "7af21e6c-4644-46f7-9ce1-837cd65c8e9b";
+				PROVISIONING_PROFILE = "fd8db2a2-0efb-4a67-bdd6-ba65612718b6";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

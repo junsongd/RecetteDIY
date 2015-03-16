@@ -23,7 +23,7 @@ Ext.application({
         'AccueilView',
         'RecetteView',
         'RecetteViewContainer',
-         'RechercheView',
+        'RechercheView',
         'IngredientView',
         'CommunicationView',
         'PropositionView', 
@@ -41,7 +41,13 @@ Ext.application({
         'AboutUsView',
         'RecetteRechercheDetailView',
         'RecetteRechercheResultViewContainer',
-        'RecetteRechercheResultView' 
+        'RecetteRechercheResultView',
+        'RestaurantViewContainer',
+        'RestaurantView',
+        'RestaurantList',
+         'SuperMarketViewContainer',
+        'SuperMarketView',
+        'SuperMarketList'
     ], 
    controllers:
    [
@@ -58,12 +64,16 @@ Ext.application({
    stores: [  
 
      'PlatPopStore',
-     'CommunicationStore'
+     'CommunicationStore',
+     'SuperMarketStore',
+     'AdsStore'
    ],
    models:[ 
      
      'PlatPopModel',
-     'CommunicationModel'
+     'CommunicationModel',
+     'SupermarketModel',
+     'AdsModel'
    ], 
 
     icon: {

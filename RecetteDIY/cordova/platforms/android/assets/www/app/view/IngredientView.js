@@ -21,27 +21,16 @@ Ext.define("RecetteDIY.view.IngredientView", {
                   },
                   items: [
                     {
-                      title: 'Maturité' ,
+                      title: 'Astuces' ,
                       xtype:'navigationview',
-                      id: "maturite_navigation_view",
+                      id: "astuces_navigation_view",
                       scrollable: true,
                       defaultBackButtonText: ' ', 
                       navigationBar : {
                         docked : 'top',
-                        cls: 'maturite-navigation-bar',
+                        cls: 'astuces-navigation-bar',
                         items : [
-                          {
-                            xtype: 'button',
-                            html: 'i',
-                            cls:'buttoninfo',
-                            align : 'right',
-                            listeners:{
-                              tap : function () {
-
-
-v                              } 
-                            }
-                          }
+                            
                         ]
                       },
                       items:[
@@ -50,27 +39,18 @@ v                              }
                         } 
                       ]
                     },
-                    // Densité semis
+                    // Ingrédients
                     {
-                      title: 'Densité semis' ,
+                      title: 'Ingrédients' ,
                       xtype:'navigationview',
-                      id: "densite_navigation_view",
+                      id: "ingredients_navigation_view",
                       scrollable: true,
                       defaultBackButtonText: ' ', 
                       navigationBar : {
                         docked : 'top',
-                        cls: 'densite-navigation-bar',
+                        cls: 'ingredients-navigation-bar',
                         items : [
-                          {
-                            xtype: 'button',
-                            html: 'i',
-                            cls:'buttoninfo',
-                            align : 'right',
-                            listeners:{
-                              tap : function () {
-                               } 
-                            }
-                          }
+                           
                         ]
                       },
                       items:[

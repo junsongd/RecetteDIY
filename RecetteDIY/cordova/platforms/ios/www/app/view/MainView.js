@@ -81,8 +81,8 @@ Ext.define('RecetteDIY.view.MainView', {
       }
     ],
     listeners:{ 
-      painted : function () { // update the list height   
-  
+      painted : function () { // update the list height  
+         RecetteDIY.app.getController('AccueilController').loadAdvertise();  
        }
     }
   }

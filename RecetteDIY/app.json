@@ -72,7 +72,18 @@
             "path": "app/view/CommunicationDetailView.js",
             "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
             "update": "delta"
+        },
+        {
+            "path":  "app/view/AccueilViewContainer.js",
+            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta"
+        },
+        {
+            "path":  "app/controller/AccueilController.js",
+            "bundle": true,  /* Indicates that all class dependencies are concatenated into this file when build */
+            "update": "delta"
         }
+       
     ],
 
     /**
@@ -138,7 +149,9 @@
         "app/view/",
         "app/model/",
         "app/store/",
-        "app/profile/"
+        "app/profile/",
+        "app/controller/AccueilViewContainer.js",
+        "app/controller/AccueilController.js"
     ],
 
     /**

@@ -2,35 +2,18 @@ Ext.define('RecetteDIY.store.CommunicationStore', {
     extend: 'Ext.data.Store',
     alias: 'store.communicationstore',
 
-    config: {
-        data: [
-            {
-                title: 'Junsong',
-                date:'10/01/2015 06:18:08', 
-                thumbnail_url : "images/popular_1.jpg", 
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'Junsong',
-                date:'10/01/2015 06:18:08', 
-                thumbnail_url : "images/popular_1.jpg", 
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'Junsong',
-                date:'10/01/2015 06:18:08',
-                thumbnail_url : "images/popular_1.jpg", 
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'Junsong',
-                date:'10/01/2015 06:18:08',
-                thumbnail_url : "images/popular_1.jpg", 
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            }
-            
-        ],
+    config: { 
         storeId: 'communicationstore',
-        model: "RecetteDIY.model.CommunicationModel"
+        model: "RecetteDIY.model.CommunicationModel",
+        autoLoad:true,
+        proxy: {
+          type: 'ajax',
+          url:'http://www.wuye.fr/wordpress/?feed=recette_disscution',
+          reader: {
+            type:'json',
+            rootProperty:'callback'
+         },
+      },
     }
+
 });

@@ -14,63 +14,29 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
             
             items: [
 
-                {//give it an xtype of list for the list component
-                    xtype: 'carousel',
-                    id: "pub-image-list",
-                    defaults: {
-                        styleHtmlContent: true
-                    },
-                    layout: {type: "fit"},
-                    items: [
-                                {
-                                    html : '<img src="images/appel_sponsor.jpg"></img>',
-                                    listeners:{
-                                    tap : function () {
-                                         Ext.getCmp('accueil_navigation_view').push(
-                                         {
-                                            xtype: 'pubdetailview',
-                                            title: 'Pub 1'
-                                          }
-                                        );  
-                                    } ,
-                                    element: 'element'
-                                  } 
-                                     
-                                },
-                                {
-                                      html : '<img src="images/appel_sponsor2.jpg"></img>',
-                                      listeners:{
-                                      tap : function () {
-                                           Ext.getCmp('accueil_navigation_view').push(
-                                           {
-                                              xtype: 'pubdetailview',
-                                              title: 'Pub 2'
-                                            }
-                                          );  
-                                      } ,
-                                      element: 'element'
-                                  }
-                                    
-                                },
-                                {
-                                    html : '<img src="images/plat_boeuf_sauce_piquante.jpg"></img>',
-                                      listeners:{
-                                      tap : function () {
-                                           Ext.getCmp('accueil_navigation_view').push(
-                                           {
-                                              xtype: 'pubdetailview',
-                                              title: 'Pub 3'
-                                            }
-                                          );  
-                                      } ,
-                                     element: 'element'
+                      {//give it an xtype of list for the list component
+                          xtype: 'carousel',
+                          id: "pub-image-list",
+                          defaults: {
+                              styleHtmlContent: true
+                          },
+                          layout: {type: "fit"},
+                       
+                          listeners: {
+                
+                                       painted: function()  { 
+
+                                         RecetteDIY.app.getController('AccueilController').unbindClick();  
+                                         
+                                         RecetteDIY.app.getController('AccueilController').bindClick();   
                                     }
-                                },
-                          ]
-               },
+                                          
+                                 }
 
+                          },      
+                    
 
-                        ]
+               ]
 
           },
 

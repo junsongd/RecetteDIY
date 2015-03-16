@@ -14,8 +14,17 @@ Ext.define("RecetteDIY.view.CommunicationViewContainer", {
         xtype : 'communicationlist', 
         flex:'1',
         listeners: {
-               itemtap: function(a, b, c, d, e) {
-                   // TerreDeLin.app.getController('RecController').showMessageDetail(a, b, c, d, e);   
+               itemtap: function(element, index, target, record, e, eOpts) { 
+
+                     Ext.getCmp('communication_navigation_view').push(
+                                          {
+                                            xtype: 'communicationdetailview',
+                                            title: 'Detail',
+                                           }
+                                        );   
+                  RecetteDIY.app.getController('DisscutionController')._currentRecord = record;
+
+
                 },
                painted: function()  {
             
@@ -23,22 +32,7 @@ Ext.define("RecetteDIY.view.CommunicationViewContainer", {
 
                } 
             }
-      },
-       //Contenue a droite
-     {
-            xtype: "panel",
-            id: "communicationDroite",
-            cls: "",
-            flex: "1",
-            layout:'vbox',
-            scrollable: 'vertical',
-            style: 'margin: auto !important; text-align: center;',
-            maskOnOpen: false,
-            hidden:true,
-            showAnimation:{
-               type:'slide',
-            }  
-         },
+      } 
     ],
        
   },
