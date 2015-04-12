@@ -42,6 +42,13 @@ module.exports = [
             "cordova.plugins.email",
             "plugin.email"
         ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+        "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -49,7 +56,8 @@ module.exports.metadata =
 {
     "org.apache.cordova.device": "0.2.13",
     "org.apache.cordova.camera": "0.3.4",
-    "de.appplant.cordova.plugin.email-composer": "0.8.2dev"
+    "de.appplant.cordova.plugin.email-composer": "0.8.2dev",
+    "nl.x-services.plugins.socialsharing": "4.3.17"
 }
 // BOTTOM OF METADATA
 });

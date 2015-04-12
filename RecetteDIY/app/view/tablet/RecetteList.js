@@ -5,18 +5,7 @@ Ext.define("RecetteDIY.view.tablet.RecetteList", {
 
    config: {
      id: 'recette_list',
-        Cls: 'recette_list',
-           plugins: [
-        {
-            xclass: 'Ext.plugin.PullRefresh',
-            pullText: 'Mise à jour!',
-            loadedText :'Le chargement est fini',
-            loadingText :'Chargement...',
-            pullRefreshText: 'Pull-down pour Mise à jour!',
-            releaseText: 'Lâcher pour Mise à jour...',
-            lastUpdatedText:'Dernière mise à jour'
-         }
-      ], 
+        Cls: 'recette_list', 
         items: [
             {
                 xtype: 'dataview',
@@ -35,7 +24,7 @@ Ext.define("RecetteDIY.view.tablet.RecetteList", {
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'platstore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 

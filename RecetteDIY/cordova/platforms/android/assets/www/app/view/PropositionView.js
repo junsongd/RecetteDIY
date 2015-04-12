@@ -28,11 +28,13 @@ Ext.define("RecetteDIY.view.PropositionView", {
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar',
+              title: 'SuperMarche'
               
             },
             items:[
               { 
                   xtype: 'supermarketview', 
+                   title: 'SuperMarche'
               } 
             ]
           },
@@ -44,11 +46,13 @@ Ext.define("RecetteDIY.view.PropositionView", {
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar', 
+               title: 'Restaurants'
                
             },
             items : [ 
               { 
-                  xtype: 'restaurantview' 
+                  xtype: 'restaurantview' ,
+                   title: 'Restaurants'
               } 
             ]
           }

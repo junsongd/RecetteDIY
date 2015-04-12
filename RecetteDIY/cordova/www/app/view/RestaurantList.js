@@ -34,7 +34,7 @@ Ext.define("RecetteDIY.view.RestaurantList", {
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'restostore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 

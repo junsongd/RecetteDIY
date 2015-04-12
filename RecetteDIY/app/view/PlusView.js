@@ -15,7 +15,18 @@ Ext.define("RecetteDIY.view.PlusView", {
                   defaultBackButtonText: ' ',
                   navigationBar : {
                   docked : 'top', 
-                   
+                   items : [ 
+                      {
+                        xtype: 'button', 
+                        iconCls:'refresh',
+                        align : 'left',
+                        listeners:{
+                          tap : function () { 
+                             RecetteDIY.app.getController('MainController').updateContent();
+                          } 
+                        }
+                      } 
+                     ]
                   },
                 items : [ 
                   { 

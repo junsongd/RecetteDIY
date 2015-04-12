@@ -12,23 +12,7 @@ Ext.define("RecetteDIY.view.SuperMarketViewContainer", {
     items: [
       {  
         xtype : 'supermarketlist', 
-        flex:'1',
-        listeners: {
-               itemtap: function(element, index, target, record, e, eOpts ) { 
-                                         Ext.getCmp('accueil_navigation_view').push(
-                                         {
-                                            xtype: 'recettedetailview',
-                                            title: record.data.title
-                                          }
-                                        );  
-                },
-               painted: function()  {
-            
-                // Loading.hide();
-
-               } 
-            }
-      }
+       }
       
     ],
        

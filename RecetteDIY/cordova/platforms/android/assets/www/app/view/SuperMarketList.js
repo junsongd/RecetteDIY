@@ -24,7 +24,7 @@ Ext.define("RecetteDIY.view.SuperMarketList", {
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'supermarketstore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 

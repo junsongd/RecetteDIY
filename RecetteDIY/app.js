@@ -24,7 +24,7 @@ Ext.application({
         'RecetteView',
         'RecetteViewContainer',
         'RechercheView',
-        'IngredientView',
+        'InfoView',
         'CommunicationView',
         'PropositionView', 
         'PlusView',
@@ -47,7 +47,8 @@ Ext.application({
         'RestaurantList',
          'SuperMarketViewContainer',
         'SuperMarketView',
-        'SuperMarketList'
+        'SuperMarketList' 
+
     ], 
    controllers:
    [
@@ -63,14 +64,17 @@ Ext.application({
     ],
    stores: [  
 
-     'PlatPopStore',
+     'PlatStore',
      'CommunicationStore',
      'SuperMarketStore',
-     'AdsStore'
+     'AdsStore',
+     'IngredientStore',
+     'AstuceStore',
+     'RestoStore'
    ],
    models:[ 
      
-     'PlatPopModel',
+     'PlatModel',
      'CommunicationModel',
      'SupermarketModel',
      'AdsModel'
@@ -101,14 +105,17 @@ Ext.application({
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('RecetteDIY.view.MainView'));
          // ios 7   
+           Loading.show();
                 if (window.device &&
                     window.device.platform.toLowerCase() == "ios" &&
                     parseFloat(window.device.version) >= 7.0) {
-                     Ext.select(".x-navigation-bar").applyStyles("height:64px;padding-top:10px"); 
+                     Ext.select(".x-navigation-bar ").applyStyles("height:64px;padding-top:10px"); 
+                     Ext.select(".apptopbar").applyStyles("height:64px;padding-top:10px"); 
+                 
                  }  
-         
-    },
 
+    },
+   
     onUpdated: function() {
         Ext.Msg.confirm(
             "Application Update",

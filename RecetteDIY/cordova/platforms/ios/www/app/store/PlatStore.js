@@ -1,51 +1,18 @@
 Ext.define('RecetteDIY.store.PlatStore', {
     extend: 'Ext.data.Store',
     alias: 'store.platstore',
-
-    config: {
-        data: [
-            {
-                title: 'popular_1',
-                thumbnail_url : "images/popular_1.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'popular_2',
-                thumbnail_url : "images/popular_2.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'popular_3',
-                thumbnail_url : "images/popular_3.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'popular_4',
-                thumbnail_url : "images/popular_4.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-             {
-                title: 'popular_1',
-                thumbnail_url : "images/popular_1.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'popular_2',
-                thumbnail_url : "images/popular_2.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'popular_3',
-                thumbnail_url : "images/popular_3.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-            {
-                title: 'popular_4',
-                thumbnail_url : "images/popular_4.jpg",
-                content: 'Panels are most useful as Overlays - containers that float over your appl..'
-            },
-        ],
-        storeId: 'platpopstore',
-        model: "RecetteDIY.model.PlatPopModel"
+     config: { 
+        storeId: 'platstore',
+        model: "RecetteDIY.model.PlatModel",
+        autoLoad:true,
+        proxy: {
+          type: 'ajax',
+          url:'http://www.wuye.fr/wordpress/?feed=plats',
+          reader: {
+            type:'json',
+            rootProperty:'callback'
+         },
+      },
     }
+     
 });

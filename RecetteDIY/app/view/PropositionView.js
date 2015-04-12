@@ -18,6 +18,7 @@ Ext.define("RecetteDIY.view.PropositionView", {
             align: 'center'  
           }, 
 
+
         },
         items: [
           {
@@ -27,12 +28,13 @@ Ext.define("RecetteDIY.view.PropositionView", {
              defaultBackButtonText: ' ', 
             navigationBar : {
               docked : 'top',
-              cls: 'supermarket-navigation-bar',
+              cls: 'supermarket-navigation-bar'
               
             },
             items:[
               { 
                   xtype: 'supermarketview', 
+                   title: 'SuperMarche'
               } 
             ]
           },
@@ -44,11 +46,12 @@ Ext.define("RecetteDIY.view.PropositionView", {
             navigationBar : {
               docked : 'top',
               cls: 'supermarket-navigation-bar', 
-               
+               title: 'Restaurants', 
             },
             items : [ 
               { 
-                  xtype: 'restaurantview' 
+                  xtype: 'restaurantview' ,
+                   title: 'Restaurants'
               } 
             ]
           }

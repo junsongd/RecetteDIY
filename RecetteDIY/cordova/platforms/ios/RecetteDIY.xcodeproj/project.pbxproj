@@ -26,6 +26,7 @@
 		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		5A7CFBC4D4D04A58B5BD260E /* SocialSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8FCEE979694456B4327A3C /* SocialSharing.m */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		72B975A77823404188A3C109 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA5002D4C44481494B4226B /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		75EB9237109E4E94BD1B8F73 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DACC5E390EE44B8933B7C77 /* CDVDevice.m */; };
@@ -45,6 +46,7 @@
 		B0684F35B5734E91848505FE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23872BEC3B1F4DFCAE68CAD8 /* CoreLocation.framework */; };
 		BED9D3D0024E4DA6B963086D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836D76CAA3C64706843E96D5 /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		D7E922D80C5B4517B008EB40 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F3017124684091A58B2423 /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +97,10 @@
 		30A0434714DC770100060A13 /* se */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = se; path = Localizable.strings; sourceTree = "<group>"; };
 		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* RecetteDIY-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RecetteDIY-Prefix.pch"; sourceTree = "<group>"; };
+		41F3017124684091A58B2423 /* Social.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		5BAC3BA38C5440D4A9CD604D /* CDVJpegHeaderWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVJpegHeaderWriter.h; path = org.apache.cordova.camera/CDVJpegHeaderWriter.h; sourceTree = "<group>"; };
+		64859B70BCF54F0699FFA3E6 /* SocialSharing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SocialSharing.h; path = "nl.x-services.plugins.socialsharing/SocialSharing.h"; sourceTree = "<group>"; };
 		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
 		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
 		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
 		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
 		836D76CAA3C64706843E96D5 /* MessageUI.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8B8FCEE979694456B4327A3C /* SocialSharing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SocialSharing.m; path = "nl.x-services.plugins.socialsharing/SocialSharing.m"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* RecetteDIY-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RecetteDIY-Info.plist"; path = "../RecetteDIY-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		979D92C904A94DFB8C5A03E8 /* CDVJpegHeaderWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVJpegHeaderWriter.m; path = org.apache.cordova.camera/CDVJpegHeaderWriter.m; sourceTree = "<group>"; };
 		C6856B24A4724BAB954AA186 /* CDVExif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVExif.h; path = org.apache.cordova.camera/CDVExif.h; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 				72B975A77823404188A3C109 /* ImageIO.framework in Frameworks */,
 				B0684F35B5734E91848505FE /* CoreLocation.framework in Frameworks */,
 				BED9D3D0024E4DA6B963086D /* MessageUI.framework in Frameworks */,
+				D7E922D80C5B4517B008EB40 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +237,7 @@
 				FAA5002D4C44481494B4226B /* ImageIO.framework */,
 				23872BEC3B1F4DFCAE68CAD8 /* CoreLocation.framework */,
 				836D76CAA3C64706843E96D5 /* MessageUI.framework */,
+				41F3017124684091A58B2423 /* Social.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,6 +262,8 @@
 				C6856B24A4724BAB954AA186 /* CDVExif.h */,
 				F1F35A343D1E4447A3BE8B51 /* APPEmailComposer.m */,
 				E1CE63BF24694E7996A06167 /* APPEmailComposer.h */,
+				8B8FCEE979694456B4327A3C /* SocialSharing.m */,
+				64859B70BCF54F0699FFA3E6 /* SocialSharing.h */,
 			);
 			name = Plugins;
 			path = RecetteDIY/Plugins;
@@ -454,6 +463,7 @@
 				AB8A1DD770D448E2BB756242 /* CDVCamera.m in Sources */,
 				ABB04C21D7444EB59EC0A0CA /* CDVJpegHeaderWriter.m in Sources */,
 				A9DA6F13EF9246258F20D9B1 /* APPEmailComposer.m in Sources */,
+				5A7CFBC4D4D04A58B5BD260E /* SocialSharing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +543,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = RecetteDIY;
-				PROVISIONING_PROFILE = "fd8db2a2-0efb-4a67-bdd6-ba65612718b6";
+				PROVISIONING_PROFILE = "df279525-d8c6-439a-a1f0-896fbbf56394";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -543,7 +553,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Junsong DONG (AZ7EPGXP7Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Junsong DONG (AZ7EPGXP7Q)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecetteDIY/RecetteDIY-Prefix.pch";
@@ -566,7 +577,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = RecetteDIY;
-				PROVISIONING_PROFILE = "fd8db2a2-0efb-4a67-bdd6-ba65612718b6";
+				PROVISIONING_PROFILE = "cb394bf6-c130-4916-ab20-09f11c731d46";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -581,6 +592,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Junsong DONG (AZ7EPGXP7Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_THUMB_SUPPORT = NO;
@@ -611,6 +623,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
 				);
+				PROVISIONING_PROFILE = "df279525-d8c6-439a-a1f0-896fbbf56394";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -657,7 +670,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)/libCordova.a\"",
 					"-ObjC",
 				);
-				PROVISIONING_PROFILE = "7af21e6c-4644-46f7-9ce1-837cd65c8e9b";
+				PROVISIONING_PROFILE = "cb394bf6-c130-4916-ab20-09f11c731d46";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				USER_HEADER_SEARCH_PATHS = "";

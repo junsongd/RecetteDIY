@@ -15,8 +15,18 @@ Ext.define("RecetteDIY.view.CommunicationView", {
             id: "communication_navigation_view",
             defaultBackButtonText: ' ',
             navigationBar : {
-              docked : 'top',
+              docked : 'top', 
               items : [
+                {
+                        xtype: 'button', 
+                        iconCls:'refresh',
+                        align : 'left',
+                        listeners:{
+                          tap : function () { 
+                             RecetteDIY.app.getController('MainController').updateContent();
+                          } 
+                        }
+                },
                
                 { 
                             xtype: 'button',

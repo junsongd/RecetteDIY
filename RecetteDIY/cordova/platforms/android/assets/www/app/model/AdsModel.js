@@ -1,6 +1,6 @@
-Ext.define("RecetteDIY.model.PlatPopModel", {
+Ext.define("RecetteDIY.model.AdsModel", {
    extend: "Ext.data.Model",
-   xtype:'platpopmodel',
+   xtype:'adsmodel',
    config: { 
        fields: [
          { name: 'id', type: 'int' },

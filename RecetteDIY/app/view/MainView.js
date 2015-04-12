@@ -61,7 +61,19 @@ Ext.define('RecetteDIY.view.MainView', {
             docked: 'top',
             xtype: 'titlebar',
             title: 'Propositions',
-            cls:'apptopbar'
+            cls:'apptopbar',
+              items : [ 
+                      {
+                        xtype: 'button', 
+                        iconCls:'refresh',
+                        align : 'left',
+                        listeners:{
+                          tap : function () { 
+                             RecetteDIY.app.getController('MainController').updateContent();
+                          } 
+                        }
+                      } 
+                     ]
           },
           {
             xtype: "propositionview" 
@@ -83,6 +95,7 @@ Ext.define('RecetteDIY.view.MainView', {
     listeners:{ 
       painted : function () { // update the list height  
          RecetteDIY.app.getController('AccueilController').loadAdvertise();  
+          Loading.hide();
        }
     }
   }

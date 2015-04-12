@@ -15,28 +15,28 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                     xtype: 'selectfield',
                     label: 'Piment:',
                     name: 'epice-select',
+                    id:'epice-select',
                      defaultPhonePickerConfig : {
                                                       doneButton : 'Valider',
                                                       cancelButton : 'Annuler'
                                                  },
                     options: [{
                         text: 'Sans',
-                        value: 0
+                        value: 'No'
                     }, {
                         text: 'Faible',
-                        value: 1
+                        value: 'Weak'
                     }, {
                         text: 'Normal',
-                        value: 2
+                        value: 'Normal'
                     },
                     {
                         text: 'Fort',
-                        value: 3
+                        value: 'Strong'
                     } 
                     ], // options
                     listeners: {
-                        change: function (select, newValue, oldValue) {
-                           
+                            change: function (select, newValue, oldValue) { 
                         } // change
                     } // listeners
                 }] // items (fieldset)
@@ -47,24 +47,24 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                     xtype: 'selectfield',
                     label: 'Difficulté:',
                     name: 'difficulte-select',
+                    id:'difficulte-select',
                      defaultPhonePickerConfig : {
                                                     doneButton : 'Valider',
                                                     cancelButton : 'Annuler'
                                                 },
-                    options: [{
-                        text: 'Indifférent',
-                        value: 0
-                    }, {
+                    options: [ 
+                     {
                         text: 'Facile',
-                        value: 1
-                    }, {
-                        text: 'Diffcile',
-                        value: 2
+                        value: "Easy"
                     },
                     {
-                        text: 'Très difficile',
-                        value: 3
-                    } 
+                        text: 'Normal',
+                        value: 'Normal'
+                    },
+                     {
+                        text: 'Diffcile',
+                        value: 'Difficult'
+                    }
                     ], // options
                     listeners: {
                         change: function (select, newValue, oldValue) {
@@ -79,19 +79,20 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                     xtype: 'selectfield',
                     label: 'Temps:',
                     name: 'time-select',
+                      id:'time-select',
                      defaultPhonePickerConfig : {
                                                       doneButton : 'Valider',
                                                       cancelButton : 'Annuler'
                                                  },
                     options: [{
                         text: 'Court',
-                        value: 0
+                        value: 'Short'
                     }, {
                         text: 'Normal',
-                        value: 1
+                        value:'Normal'
                     }, {
                         text: 'Long',
-                        value: 2
+                        value: 'Long'
                     } 
                     ], // options
                     listeners: {
@@ -113,7 +114,10 @@ Ext.define("RecetteDIY.view.RechercheViewContainer", {
                                 cls:'recherche-button',
                                 width:'100%' ,
                                 listeners:{
-                                    tap : function(){
+                                    tap : function(){ 
+                                      
+                                     RecetteDIY.app.getController('RechercheController').searchPlats(); 
+
                                         Ext.getCmp('recherche_navigation_view').push(
                                          {
                                             xtype: 'recetterechercheresultview',

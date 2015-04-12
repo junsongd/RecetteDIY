@@ -1,24 +1,15 @@
-Ext.define("RecetteDIY.view.IngredientView", {
+Ext.define("RecetteDIY.view.InfoView", {
    extend: 'Ext.Container',
-   xtype: 'ingredientview',
+   xtype: 'infotview',
    config: {
-      id: 'ingredientview', 
+      id: 'infotview', 
       width: '100%',
       flex:1, 
       layout:'fit',
       items:[
                {
                   xtype: 'tdltabpanel',
-                  id: "calculatorview_tabbar",
-                  tabBarPosition: 'top',
-                  tabBar: {
-                    cls:'tabbarmenu',
-                    layout:  {
-                      pack : 'center',
-                      align: 'center'  
-                    }, 
-
-                  },
+                  id: "calculatorview_tabbar", 
                   items: [
                     {
                       title: 'Astuces' ,
@@ -30,6 +21,7 @@ Ext.define("RecetteDIY.view.IngredientView", {
                         docked : 'top',
                         cls: 'astuces-navigation-bar',
                         items : [
+                        
                             
                         ]
                       },

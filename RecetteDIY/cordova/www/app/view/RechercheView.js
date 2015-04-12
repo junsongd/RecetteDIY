@@ -14,7 +14,19 @@ Ext.define("RecetteDIY.view.RechercheView", {
                   defaultBackButtonText: ' ',
                  navigationBar : {
                   docked : 'top',
-                  title:'Recherche'  
+                  title:'Recherche' ,
+                   items : [ 
+                      {
+                        xtype: 'button', 
+                        iconCls:'refresh',
+                        align : 'left',
+                        listeners:{
+                          tap : function () { 
+                             RecetteDIY.app.getController('MainController').updateContent();
+                          } 
+                        }
+                      } 
+                     ]
                 },
                 items : [ 
                   { 

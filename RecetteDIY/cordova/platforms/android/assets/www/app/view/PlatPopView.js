@@ -14,13 +14,13 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                 itemCls: 'platpop-item',
                 itemTpl: [ 
                     '<div class="platpopimage">',
-                    '   <img src= "{thumbnail_url} "> </img>',
+                    '   <img src= "{thumbnail_url}">',
                     '</div>',
                     '<div class="platpoptitle">',
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'platstore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 
@@ -30,8 +30,13 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                                             title: record.data.title
                                           }
                                         );  
+
                                    
                            },
+                            painted: function()  { 
+
+                             RecetteDIY.app.getController('AccueilController').displayPupularPlats(); 
+                       }
                 },
             },
             {

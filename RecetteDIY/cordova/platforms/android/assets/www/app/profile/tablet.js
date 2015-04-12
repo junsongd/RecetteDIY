@@ -5,7 +5,8 @@ Ext.define('RecetteDIY.profile.tablet',
    config: {
        views: [ 
         'RecetteList' ,
-        'RecetteRechercheResultList'
+        'RecetteRechercheResultList',
+        'RestaurantList'
        ] 
    },
 

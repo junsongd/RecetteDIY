@@ -1,21 +1,10 @@
  
-Ext.define("RecetteDIY.view.RestaurantList", {
+Ext.define("RecetteDIY.view.tablet.RestaurantList", {
    extend: 'Ext.Container',
    alias: "widget.restaurantlist",   
    config: {
      id: 'restaurantlist',
-        Cls: 'restaurantlist',
-           plugins: [
-        {
-            xclass: 'Ext.plugin.PullRefresh',
-            pullText: 'Mise à jour!',
-            loadedText :'Le chargement est fini',
-            loadingText :'Chargement...',
-            pullRefreshText: 'Pull-down pour Mise à jour!',
-            releaseText: 'Lâcher pour Mise à jour...',
-            lastUpdatedText:'Dernière mise à jour'
-         }
-      ], 
+        Cls: 'restaurantlist', 
         items: [
             {
                 xtype: 'dataview',
@@ -34,7 +23,7 @@ Ext.define("RecetteDIY.view.RestaurantList", {
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'restostore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 

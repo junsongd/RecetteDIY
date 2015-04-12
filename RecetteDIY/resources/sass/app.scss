@@ -207,7 +207,7 @@ $disscusion-text-color : #c9c9c9;
          .platpop-item
          {
             width: 50%;
-            height: 50%;
+           height: 200px;
             float: left;
             padding: 2px;
             .platpopimage img
@@ -228,6 +228,20 @@ $disscusion-text-color : #c9c9c9;
     }  
   
 }
+
+ .market-item
+         {
+            width: 50%;
+            height: 50%;
+            float: left;
+            padding: 2px;
+            .marketimage img
+            { 
+              width: 100%;
+            }
+        } 
+
+
 #recette_list ,#recette_recherche_result_list
 {
 
@@ -733,4 +747,6 @@ $disscusion-text-color : #c9c9c9;
    }
 }
 
-
+.x-mask{
+        display: none; 
+    } 

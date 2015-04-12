@@ -4,17 +4,19 @@ Ext.define("RecetteDIY.view.PlatPopView", {
      config: {
         items: [
             {
-                xtype: 'dataview',
-                height: '100%',
+                xtype: 'dataview', 
                 styleHtmlContent: true,
+                id:'plat-pop-list',
+                scrollable: false, 
                 width: '100%',
+                loadMask: false,
                 inline: {
                     wrap: true
                 }, 
                 itemCls: 'platpop-item',
                 itemTpl: [ 
                     '<div class="platpopimage">',
-                    '   <img src= "{thumbnail_url} "> </img>',
+                    '   <img src= "{thumbnail_url}">',
                     '</div>',
                     '<div class="platpoptitle">',
                     '    {title}',
@@ -30,8 +32,19 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                                             title: record.data.title
                                           }
                                         );  
+
                                    
                            },
+                            painted: function()  { 
+
+                             RecetteDIY.app.getController('AccueilController').displayPupularPlats(); 
+                              setTimeout(function(){
+                                 var list = Ext.getCmp('plat-pop-list'); 
+                                 var storeitems = Ext.getCmp('plat-pop-list').getStore().data.items; 
+                                if(storeitems.length != 0)
+                                list.setHeight(  Math.ceil(storeitems.length/2) * 202 );
+                              },0);
+                       }
                 },
             },
             {

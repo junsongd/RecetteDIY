@@ -21,9 +21,7 @@ Ext.define('RecetteDIY.controller.AccueilController', {
                   }
               },
               scope: this
-          });  
-
-       
+          });   
     },
 
     bindClick : function(){ 
@@ -53,7 +51,83 @@ Ext.define('RecetteDIY.controller.AccueilController', {
 
                                                 }
                                               );  
+    } ,
+    displayPupularPlats : function(index) { 
+
+           var store = Ext.getStore('platstore');
+           store.clearFilter();
+           store.filter("popular", "Yes");
+
+          
+    } ,
+    displayPlats : function(index) { 
+
+           var store = Ext.getStore('platstore');
+            store.clearFilter();
+            store.filter([
+                                                
+                            { 
+                               filterFn: function(item) { 
+                                  if (item.get("type") != null)
+                                      return item.get("type").indexOf("Plat") > -1 ;
+                                  else
+                                      return true;
+                               }
+                            } 
+                        ]);
+
+          
+    },
+    displayEntre : function(index) { 
+
+            var store = Ext.getStore('platstore');
+            store.clearFilter();
+            store.filter([
+                                                
+                            { 
+                               filterFn: function(item) { 
+                                  if (item.get("type") != null)
+                                      return item.get("type").indexOf("Entre") > -1 ;
+                                  else
+                                      return true;
+                               }
+                            } 
+                        ]);
+
+          
+    },
+    displayDessert : function(index) { 
+
+           var store = Ext.getStore('platstore');
+            store.clearFilter();
+            store.filter([
+                                                
+                            { 
+                               filterFn: function(item) { 
+                                  if (item.get("type") != null)
+                                      return item.get("type").indexOf("Dessert") > -1 ;
+                                  else
+                                      return true;
+                               }
+                            } 
+                        ]);
+
+          
+    },
+    displayAutre : function(index) { 
+
+           var store = Ext.getStore('platstore');
+            store.clearFilter();
+            store.filter([
+                                                
+                            { 
+                               filterFn: function(item) { 
+                                  if (item.get("type") != null)
+                                      return item.get("type").indexOf("Others") > -1 ;
+                                  else
+                                      return true;
+                               }
+                            } 
+                        ]);  
     }
- 
- 
 });

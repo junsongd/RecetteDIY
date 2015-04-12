@@ -39,6 +39,8 @@ Ext.define("RecetteDIY.view.AccueilView", {
                 ]
           }  
       ],
+      
+      
 
    },
    initialize: function() {

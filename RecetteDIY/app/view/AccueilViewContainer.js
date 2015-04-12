@@ -5,7 +5,7 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
       id: 'accueilviewcontainer', 
        width: '100%',  
       layout:'vbox',  
-        
+       scrollable:'vertical',   
       items: [
          { 
             xtype: "container",
@@ -61,6 +61,10 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                                             title: 'Entré'
                                           }
                                         );  
+
+                                          setTimeout(function(){ 
+                                        RecetteDIY.app.getController('AccueilController').displayEntre();  
+                                       },50);
                                     } 
                                   } 
                       },
@@ -70,12 +74,17 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                          cls:'category-menu-button plat',
                          listeners:{
                                     tap : function () {
+
                                          Ext.getCmp('accueil_navigation_view').push(
                                          {
                                             xtype: 'recetteview',
                                             title: 'Plat'
                                           }
-                                        );  
+                                        );
+                                       setTimeout(function(){ 
+                                        RecetteDIY.app.getController('AccueilController').displayPlats();  
+                                       },50);
+                                        
                                     }
                                   } 
                       },
@@ -91,6 +100,9 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                                             title: 'Dessert'
                                           }
                                         );  
+                                          setTimeout(function(){ 
+                                        RecetteDIY.app.getController('AccueilController').displayDessert();  
+                                       },50);
                                     }
                                   } 
                       },
@@ -106,14 +118,16 @@ Ext.define("RecetteDIY.view.AccueilViewContainer", {
                                             title: 'Autres'
                                           }
                                         );  
+                                          setTimeout(function(){ 
+                                        RecetteDIY.app.getController('AccueilController').displayAutre();  
+                                       },50);
                                     }
                                   } 
                       }
                     ]
                   }, 
                   {
-                    xtype: 'platpopview' ,
-                    flex:1
+                    xtype: 'platpopview' 
 
                   }, 
  

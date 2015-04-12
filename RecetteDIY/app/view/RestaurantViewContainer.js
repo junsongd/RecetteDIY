@@ -11,8 +11,8 @@ Ext.define("RecetteDIY.view.RestaurantViewContainer", {
             },  
     items: [
       {  
-        xtype : 'supermarketlist', 
-        flex:'1',
+        xtype : 'restaurantlist', 
+         layout:'fit', 
         listeners: {
                itemtap: function(element, index, target, record, e, eOpts ) { 
                                          Ext.getCmp('accueil_navigation_view').push(

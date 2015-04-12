@@ -48,5 +48,39 @@ Ext.define('RecetteDIY.controller.MainController', {
       };
                                 
        navigator.camera.getPicture (onSuccess, onFail,{quality: 50, destinationType: Camera.DestinationType.FILE_URI});                                 
-  }
+  },
+
+     updateContent : function ()
+  {  
+
+        Loading.show();
+        var platstore = Ext.getStore('platstore');
+        var adsstore = Ext.getStore('adsstore');
+        var supermarketstore = Ext.getStore('supermarketstore');
+        var restostore = Ext.getStore('restostore');
+        var astucesstore = Ext.getStore('astucesstore');
+        var communicationstore = Ext.getStore('communicationstore');
+        var ingredientstore = Ext.getStore('ingredientstore');  
+        platstore.load();
+        adsstore.load();
+        supermarketstore.load();
+        restostore.load();
+        astucesstore.load();
+        communicationstore.load();
+        ingredientstore.load();  
+         
+         ingredientstore.load({
+           callback: function(records, operation, success) {
+            setTimeout(
+                     function() {
+                        Loading.hide();
+                     },
+                     500
+                  );
+           }
+         });
+         
+      
+  } 
+
 });

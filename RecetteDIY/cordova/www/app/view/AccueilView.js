@@ -16,19 +16,17 @@ Ext.define("RecetteDIY.view.AccueilView", {
                   docked : 'top',
                   title:'Accueil',
                   items : [
-                    /**
+                     
                       {
-                        xtype: 'button',
-                        html: 'i',
-                        cls:'buttoninfo',
-                        align : 'right',
+                        xtype: 'button', 
+                        iconCls:'refresh',
+                        align : 'left',
                         listeners:{
-                          tap : function () {
-
-                            
+                          tap : function () { 
+                             RecetteDIY.app.getController('MainController').updateContent();
                           } 
                         }
-                      } **/
+                      }  
                   ]
                 },
                 items : [ 
@@ -38,7 +36,8 @@ Ext.define("RecetteDIY.view.AccueilView", {
                   } 
                 ]
           }  
-      ],
+      ] 
+      
 
    },
    initialize: function() {

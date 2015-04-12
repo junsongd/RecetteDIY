@@ -26,7 +26,7 @@ Ext.define("RecetteDIY.view.PlusViewContainer", {
                                       tap : function () {
                                            Ext.getCmp('plus_navigation_view').push(
                                                    {
-                                                      xtype: 'ingredientview',
+                                                      xtype: 'infotview',
                                                       title: 'Astuces et Ingrédients'
                                                     }
                                                   ); 
@@ -41,7 +41,7 @@ Ext.define("RecetteDIY.view.PlusViewContainer", {
                                       tap : function () {
                                            Ext.getCmp('plus_navigation_view').push(
                                                    {
-                                                      xtype: 'ingredientview',
+                                                      xtype: 'infotview',
                                                       title: 'Astuces et Ingrédients'
                                                     }
                                                   ); 
@@ -92,15 +92,14 @@ Ext.define("RecetteDIY.view.PlusViewContainer", {
                          {
                             xtype: "button",
                             cls: "autre-menu-button",  
-                            html:"Qui sommes-nous ?",
+                            html:"Partage app",
                              listeners:{
                               tap : function () {
-                                   Ext.getCmp('plus_navigation_view').push(
-                                           {
-                                              xtype: 'aboutusview',
-                                              title: 'Qui sommes-nous ?'
-                                            }
-                                          ); 
+                                 if(window.device)
+                                 window.plugins.socialsharing.share('Message, subject, image and link', 'The subject', 'https://www.google.nl/images/srpr/logo4w.png', 'http://www.x-services.nl') ;
+                                 else
+                                 alert('partage app');
+                                  
                                } 
                              }
                                       

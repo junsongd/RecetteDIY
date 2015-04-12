@@ -15,29 +15,34 @@ Ext.define("RecetteDIY.view.SuperMarketList", {
                 inline: {
                     wrap: true
                 }, 
-                itemCls: 'platpop-item',
+                itemCls: 'market-item',
                 itemTpl: [ 
-                    '<div class="platpopimage">',
-                    '   <img src= "{thumbnail_url} "> </img>',
+                    '<div class="marketimage">',
+                    '   <img src= "{thumbnail_url}">',
                     '</div>',
                     '<div class="platpoptitle">',
                     '    {title}',
                     '</div>'
                 ],
-                store: 'platpopstore',
+                store: 'supermarketstore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 
-                                         Ext.getCmp('accueil_navigation_view').push(
+                                         Ext.getCmp('supermarket_navigation_view').push(
                                          {
                                             xtype: 'recettedetailview',
                                             title: record.data.title
                                           }
                                         );  
+
                                    
                            },
+                            painted: function()  { 
+
+                             
+                       }
                 },
-            }  
+            } 
         ]
     },
 

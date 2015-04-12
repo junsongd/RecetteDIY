@@ -26,7 +26,7 @@ Ext.define("RecetteDIY.view.PlusViewContainer", {
                                       tap : function () {
                                            Ext.getCmp('plus_navigation_view').push(
                                                    {
-                                                      xtype: 'ingredientview',
+                                                      xtype: 'infotview',
                                                       title: 'Astuces et Ingrédients'
                                                     }
                                                   ); 
@@ -41,7 +41,7 @@ Ext.define("RecetteDIY.view.PlusViewContainer", {
                                       tap : function () {
                                            Ext.getCmp('plus_navigation_view').push(
                                                    {
-                                                      xtype: 'ingredientview',
+                                                      xtype: 'infotview',
                                                       title: 'Astuces et Ingrédients'
                                                     }
                                                   ); 
