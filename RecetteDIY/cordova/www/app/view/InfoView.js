@@ -12,7 +12,7 @@ Ext.define("RecetteDIY.view.InfoView", {
                   id: "calculatorview_tabbar", 
                   items: [
                     {
-                      title: 'Astuces' ,
+                      title: 'Astuce' ,
                       xtype:'navigationview',
                       id: "astuces_navigation_view",
                       scrollable: true,
@@ -20,6 +20,7 @@ Ext.define("RecetteDIY.view.InfoView", {
                       navigationBar : {
                         docked : 'top',
                         cls: 'astuces-navigation-bar',
+                        
                         items : [
                         
                             
@@ -27,13 +28,14 @@ Ext.define("RecetteDIY.view.InfoView", {
                       },
                       items:[
                         { 
-                           
+                           xtype : 'astuceview',
+                            title: 'Astuces',
                         } 
                       ]
                     },
                     // Ingrédients
                     {
-                      title: 'Ingrédients' ,
+                      title: 'Ingrédient' ,
                       xtype:'navigationview',
                       id: "ingredients_navigation_view",
                       scrollable: true,
@@ -41,13 +43,15 @@ Ext.define("RecetteDIY.view.InfoView", {
                       navigationBar : {
                         docked : 'top',
                         cls: 'ingredients-navigation-bar',
+                       
                         items : [
                            
                         ]
                       },
                       items:[
                         { 
-                           
+                            xtype : 'ingredientview',
+                              title: 'Ingrédients',
                         } 
                       ]
                     } 

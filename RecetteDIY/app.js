@@ -23,6 +23,7 @@ Ext.application({
         'AccueilView',
         'RecetteView',
         'RecetteViewContainer',
+        'RecetteDetailView', 
         'RechercheView',
         'InfoView',
         'CommunicationView',
@@ -30,8 +31,7 @@ Ext.application({
         'PlusView',
         'TDLTabPanel',
         'PlatPopView', 
-        'RecetteDetailView',
-        'AccueilViewContainer',
+         'AccueilViewContainer',
         'CommunicationDetailView',
         'RechercheViewContainer',
         'PubDetailView',
@@ -45,9 +45,21 @@ Ext.application({
         'RestaurantViewContainer',
         'RestaurantView',
         'RestaurantList',
-         'SuperMarketViewContainer',
+        'SuperMarketViewContainer',
         'SuperMarketView',
-        'SuperMarketList' 
+        'SuperMarketList',
+        'SuperMarketDetailView',
+        'RestaurantDetailView',
+        'AstuceViewContainer',
+        'AstuceView',
+        'AstuceList',
+        'AstuceDetailView',
+        'IngredientViewContainer',
+        'IngredientView',
+        'IngredientList',
+        'IngredientDetailView',
+       
+
 
     ], 
    controllers:

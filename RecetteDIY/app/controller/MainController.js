@@ -36,8 +36,7 @@ Ext.define('RecetteDIY.controller.MainController', {
   {
     var context = this; 
      var onSuccess = function(imageURI)
-      {
-                                    
+      {                             
         window.console.log("onSuccess");
         var attachements = [imageURI];
          window.setTimeout(function(){context.sentEmail(emailAddress,subject,body,attachements);}, 1000);
@@ -68,8 +67,7 @@ Ext.define('RecetteDIY.controller.MainController', {
         astucesstore.load();
         communicationstore.load();
         ingredientstore.load();  
-         
-         ingredientstore.load({
+        ingredientstore.load({
            callback: function(records, operation, success) {
             setTimeout(
                      function() {
@@ -79,7 +77,13 @@ Ext.define('RecetteDIY.controller.MainController', {
                   );
            }
          });
-         
+          RecetteDIY.app.getController('AccueilController').displayPupularPlats(); 
+                              setTimeout(function(){
+                                 var list = Ext.getCmp('plat-pop-list'); 
+                                 var storeitems = Ext.getCmp('plat-pop-list').getStore().data.items; 
+                                if(storeitems.length != 0)
+                                list.setHeight(  Math.ceil(storeitems.length/2) * 202 );
+                              },0);
       
   } 
 

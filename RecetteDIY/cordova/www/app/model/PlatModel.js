@@ -11,7 +11,9 @@ Ext.define("RecetteDIY.model.PlatModel", {
          { name: 'piment', type: 'string' },
          { name: 'difficulty', type: 'string' } ,
          { name: 'time', type: 'string' },
-         { name: 'popular', type: 'string' } 
+         { name: 'popular', type: 'string' },
+         { name: 'content', type: 'string' }  
+
       ],
 
    }

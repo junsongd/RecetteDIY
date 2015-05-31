@@ -29,7 +29,8 @@ Ext.define("RecetteDIY.view.PlatPopView", {
                                          Ext.getCmp('accueil_navigation_view').push(
                                          {
                                             xtype: 'recettedetailview',
-                                            title: record.data.title
+                                            title: record.data.title,
+                                            record:record
                                           }
                                         );  
 

@@ -131,8 +131,7 @@ $disscusion-text-color : #c9c9c9;
 {
   background-color:$page-bg-color; 
 }
-.x-phone
-{
+@media only screen and (max-device-width: 480px){
 
 
      #accueilviewcontainer
@@ -226,8 +225,50 @@ $disscusion-text-color : #c9c9c9;
       }  
 
     }  
-  
+ 
+   #communicationview
+  { 
+      .compose::before{
+         color:$icon-bg-color !important;
+         margin-top: 5px;
+
+      }
+      .x-list-item
+      {
+
+          height: 155px;
+
+      }
+      .message-list-item-image
+      {
+
+        width: 30%;
+        float: left;
+        img {
+           width: 100%;
+        }
+      }
+      .message-list-item-message
+      {
+
+        padding: 6px;
+        float: left;
+        width: 70%;
+        font-size: 11px;
+      }
+      .message-list-item-date
+      {
+        font-size: 12px;
+        font-style: italic;
+         padding: 5px;
+      }
+      
+
+  }
+ 
+
 }
+
 
  .market-item
          {
@@ -550,51 +591,7 @@ $disscusion-text-color : #c9c9c9;
   
  
 /* communicaiton */
-.x-phone
-{
-   #communicationview
-  { 
-      .compose::before{
-         color:$icon-bg-color !important;
-         margin-top: 5px;
 
-      }
-      .x-list-item
-      {
-
-          height: 155px;
-
-      }
-      .message-list-item-image
-      {
-
-        width: 30%;
-        float: left;
-        img {
-           width: 100%;
-        }
-      }
-      .message-list-item-message
-      {
-
-        padding: 6px;
-        float: left;
-        width: 70%;
-        font-size: 11px;
-      }
-      .message-list-item-date
-      {
-        font-size: 12px;
-        font-style: italic;
-         padding: 5px;
-      }
-      
-
-  }
-
-
-
-}
   
 .x-tablet
 {

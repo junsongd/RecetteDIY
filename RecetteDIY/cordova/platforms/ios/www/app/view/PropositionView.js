@@ -34,7 +34,7 @@ Ext.define("RecetteDIY.view.PropositionView", {
             items:[
               { 
                   xtype: 'supermarketview', 
-                   title: 'SuperMarche'
+                   title: 'SuperMarches'
               } 
             ]
           },

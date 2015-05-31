@@ -6,8 +6,7 @@ Ext.define('RecetteDIY.profile.tablet',
        views: [ 
         'RecetteList' ,
         'RecetteRechercheResultList',
-        'RestaurantList'
-       ] 
+        ] 
    },
 
    isActive: function() {

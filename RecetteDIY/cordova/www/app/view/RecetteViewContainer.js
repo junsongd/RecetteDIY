@@ -18,7 +18,8 @@ Ext.define("RecetteDIY.view.RecetteViewContainer", {
                                          Ext.getCmp('accueil_navigation_view').push(
                                          {
                                             xtype: 'recettedetailview',
-                                            title: record.data.title
+                                            title: record.data.title,
+                                             record:record
                                           }
                                         );  
                 },

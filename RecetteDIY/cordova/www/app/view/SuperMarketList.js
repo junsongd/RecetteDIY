@@ -30,8 +30,9 @@ Ext.define("RecetteDIY.view.SuperMarketList", {
                                 
                                          Ext.getCmp('supermarket_navigation_view').push(
                                          {
-                                            xtype: 'recettedetailview',
-                                            title: record.data.title
+                                            xtype: 'supermarketdetailview',
+                                            title: record.data.title,
+                                            record:record
                                           }
                                         );  
 

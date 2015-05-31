@@ -679,11 +679,19 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.view.AboutUsView": [],
   "RecetteDIY.view.AccueilView": [],
   "RecetteDIY.view.AccueilViewContainer": [],
+  "RecetteDIY.view.AstuceDetailView": [],
+  "RecetteDIY.view.AstuceList": [],
+  "RecetteDIY.view.AstuceView": [],
+  "RecetteDIY.view.AstuceViewContainer": [],
   "RecetteDIY.view.CommunicationDetailView": [],
   "RecetteDIY.view.CommunicationList": [],
   "RecetteDIY.view.CommunicationView": [],
   "RecetteDIY.view.CommunicationViewContainer": [],
   "RecetteDIY.view.InfoView": [],
+  "RecetteDIY.view.IngredientDetailView": [],
+  "RecetteDIY.view.IngredientList": [],
+  "RecetteDIY.view.IngredientView": [],
+  "RecetteDIY.view.IngredientViewContainer": [],
   "RecetteDIY.view.MainView": [],
   "RecetteDIY.view.PlatPopView": [],
   "RecetteDIY.view.PlusView": [],
@@ -698,18 +706,19 @@ Ext.ClassManager.addNameAlternateMappings({
   "RecetteDIY.view.RecetteViewContainer": [],
   "RecetteDIY.view.RechercheView": [],
   "RecetteDIY.view.RechercheViewContainer": [],
+  "RecetteDIY.view.RestaurantDetailView": [],
+  "RecetteDIY.view.RestaurantList": [],
   "RecetteDIY.view.RestaurantView": [],
   "RecetteDIY.view.RestaurantViewContainer": [],
+  "RecetteDIY.view.SuperMarketDetailView": [],
   "RecetteDIY.view.SuperMarketList": [],
   "RecetteDIY.view.SuperMarketView": [],
   "RecetteDIY.view.SuperMarketViewContainer": [],
   "RecetteDIY.view.TDLTabPanel": [],
   "RecetteDIY.view.phone.RecetteList": [],
   "RecetteDIY.view.phone.RecetteRechercheResultList": [],
-  "RecetteDIY.view.phone.RestaurantList": [],
   "RecetteDIY.view.tablet.RecetteList": [],
-  "RecetteDIY.view.tablet.RecetteRechercheResultList": [],
-  "RecetteDIY.view.tablet.RestaurantList": []
+  "RecetteDIY.view.tablet.RecetteRechercheResultList": []
 });
 
 Ext.ClassManager.addNameAliasMappings({
@@ -1481,6 +1490,18 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.AccueilViewContainer": [
     "widget.accueilviewcontainer"
   ],
+  "RecetteDIY.view.AstuceDetailView": [
+    "widget.astucedetailview"
+  ],
+  "RecetteDIY.view.AstuceList": [
+    "widget.astucelist"
+  ],
+  "RecetteDIY.view.AstuceView": [
+    "widget.astuceview"
+  ],
+  "RecetteDIY.view.AstuceViewContainer": [
+    "widget.astuceviewcontainer"
+  ],
   "RecetteDIY.view.CommunicationDetailView": [
     "widget.communicationdetailview"
   ],
@@ -1495,6 +1516,18 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "RecetteDIY.view.InfoView": [
     "widget.infotview"
+  ],
+  "RecetteDIY.view.IngredientDetailView": [
+    "widget.ingredientdetailview"
+  ],
+  "RecetteDIY.view.IngredientList": [
+    "widget.ingredientlist"
+  ],
+  "RecetteDIY.view.IngredientView": [
+    "widget.ingredientview"
+  ],
+  "RecetteDIY.view.IngredientViewContainer": [
+    "widget.ingredientviewcontainer"
   ],
   "RecetteDIY.view.MainView": [
     "widget.main"
@@ -1538,11 +1571,20 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.RechercheViewContainer": [
     "widget.rechercheviewcontainer"
   ],
+  "RecetteDIY.view.RestaurantDetailView": [
+    "widget.restaurantdetailview"
+  ],
+  "RecetteDIY.view.RestaurantList": [
+    "widget.restaurantlist"
+  ],
   "RecetteDIY.view.RestaurantView": [
     "widget.restaurantview"
   ],
   "RecetteDIY.view.RestaurantViewContainer": [
     "widget.restaurantviewcontainer"
+  ],
+  "RecetteDIY.view.SuperMarketDetailView": [
+    "widget.supermarketdetailview"
   ],
   "RecetteDIY.view.SuperMarketList": [
     "widget.supermarketlist"
@@ -1562,17 +1604,11 @@ Ext.ClassManager.addNameAliasMappings({
   "RecetteDIY.view.phone.RecetteRechercheResultList": [
     "widget.recetterechercheresultlist"
   ],
-  "RecetteDIY.view.phone.RestaurantList": [
-    "widget.restaurantlist"
-  ],
   "RecetteDIY.view.tablet.RecetteList": [
     "widget.recettelist"
   ],
   "RecetteDIY.view.tablet.RecetteRechercheResultList": [
     "widget.recetterechercheresultlist"
-  ],
-  "RecetteDIY.view.tablet.RestaurantList": [
-    "widget.restaurantlist"
   ]
 });
 

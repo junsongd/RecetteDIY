@@ -1,10 +1,11 @@
  
-Ext.define("RecetteDIY.view.tablet.RestaurantList", {
+Ext.define("RecetteDIY.view.IngredientList", {
    extend: 'Ext.Container',
-   alias: "widget.restaurantlist",   
+   alias: "widget.ingredientlist",   
    config: {
-     id: 'restaurantlist',
-        Cls: 'restaurantlist', 
+     id: 'ingredientlist',
+        Cls: 'ingredientlist',
+        
         items: [
             {
                 xtype: 'dataview',
@@ -14,27 +15,33 @@ Ext.define("RecetteDIY.view.tablet.RestaurantList", {
                 inline: {
                     wrap: true
                 }, 
-                itemCls: 'platpop-item-tablet',
+                itemCls: 'market-item',
                 itemTpl: [ 
-                    '<div class="platpopimage">',
-                    '   <img src= "{thumbnail_url} "> </img>',
+                    '<div class="marketimage">',
+                    '   <img src= "{thumbnail_url}">',
                     '</div>',
                     '<div class="platpoptitle">',
                     '    {title}',
                     '</div>'
                 ],
-                store: 'restostore',
+                store: 'ingredientstore',
                 listeners: {
                              itemtap: function ( element, index, target, record, e, eOpts ) {
                                 
-                                         Ext.getCmp('recherche_navigation_view').push(
+                                         Ext.getCmp('ingredients_navigation_view').push(
                                          {
-                                            xtype: 'recetterecherchedetailview',
-                                            title: record.data.title
+                                            xtype: 'ingredientdetailview',
+                                            title: record.data.title,
+                                            record:record
                                           }
                                         );  
+
                                    
                            },
+                            painted: function()  { 
+
+                             
+                       }
                 },
             } 
         ]
